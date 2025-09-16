@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "07741d2ba8b16cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e0280ef51f33957",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6d48a0e2d94aac7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 CYSECO/CYSECO SW 01.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CYSECO SW 01"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28faeefd0237eccd",
+    "type": "split",
+    "children": [
+      {
+        "id": "23d0d97b8e0aa4f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57cd8d953dedd4a2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "81dd8e0a04a57604",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dbe321d8544fc499",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3ecc5d2d13b52840",
+    "type": "split",
+    "children": [
+      {
+        "id": "affd19b2dc7ce366",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "247a909c7695bfcb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "06 CYSECO/CYSECO SW 01.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CYSECO SW 01"
+            }
+          },
+          {
+            "id": "10e67fcdecb31a04",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "06 CYSECO/CYSECO SW 01.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CYSECO SW 01"
+            }
+          },
+          {
+            "id": "84f96329011ce107",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e3f9647b937d7375",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "06 CYSECO/CYSECO SW 01.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CYSECO SW 01"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "57cd8d953dedd4a2",
+  "lastOpenFiles": [
+    "05 DB&S/DB&S SW 01.md",
+    "04 INTROL/INTROL SW01.md",
+    "03 NETW2/NETW2 SW 01.md",
+    "02 DMATH/DMATH SW 01.md",
+    "01 OOP/OOP SW 01.md"
+  ]
+}

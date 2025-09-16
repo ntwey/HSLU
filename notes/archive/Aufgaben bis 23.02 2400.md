@@ -1,0 +1,22 @@
+#Archive
+- [x] ANAG 
+	- [x] Aufgaben Machen mindestens 2 pro block [[SW 01 ANAG|SW 01 ANAG]] 
+	- [x] Notizen verschönern
+	- [x] Fragen Notieren
+- [x] NETW1
+	- [x] Notizen verbessern
+	- [x] Packet Trace installieren
+	- [x] Folien Nochmals durchgehen
+- [x] WEBT
+	- [x] Zusammenfassung
+	- [x] EWAD Installieren
+- [x] ISF
+	- [x] Zusammenfassung von Folien machen
+	- [x] Folien Awareness durch schauen
+	- [x] Fragen Notieren
+- [x] SPTA
+	- [x] Folien Zusammenfassen
+- [x] OSA
+	- [x] Folien Zusammenfassen
+	- [x] Binary Rechnen Optional
+	- [x] Hex Rechnen Optional

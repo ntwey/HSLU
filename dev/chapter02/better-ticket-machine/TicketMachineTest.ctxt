@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ testTicketMachineValid()
+comment1.params=
+comment1.target=void\ testTicketMachineInvalid()
+comment2.params=
+comment2.target=void\ testGetBalance()
+numComments=3
