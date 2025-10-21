@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 CYSECO/CYSECO SW 01.md",
+                "file": "02 DMATH/DMATH SW02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CYSECO SW 01"
+              "title": "DMATH SW02"
+            }
+          },
+          {
+            "id": "536865c79c7aec40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 DB&S/DB&S SW05 + 06.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DB&S SW05 + 06"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,12 +184,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "57cd8d953dedd4a2",
+  "active": "536865c79c7aec40",
   "lastOpenFiles": [
-    "05 DB&S/DB&S SW 01.md",
-    "04 INTROL/INTROL SW01.md",
-    "03 NETW2/NETW2 SW 01.md",
-    "02 DMATH/DMATH SW 01.md",
-    "01 OOP/OOP SW 01.md"
+    "01 OOP/OOP SW07 Collections, Equals und Compare.md",
+    "assets/OOP/U06_EX_PolymorphieUnitTesting.pdf",
+    "assets/OOP/U05_EX_VererbungEntwicklungsumgebung.pdf",
+    "assets/OOP/U04_EX_SchnittstellenDatenkapselung.pdf",
+    "01 OOP/OOP SW06 Polymorphie und Unit-Testing.md",
+    "04 INTROL/INTROL SW02 Open your mind.md",
+    "04 INTROL/INTROL SW01 Einführung.md",
+    "03 NETW2/NETW2 SW02 Modul 2, 6.md",
+    "01 OOP/OOP SW03 Selektion und Iteration.md",
+    "02 DMATH/DMATH SW05.md",
+    "02 DMATH/DMATH SW04.md",
+    "02 DMATH/DMATH SW03.md",
+    "05 DB&S/DB&S SW05 + 06.md",
+    "06 CYSECO/CYSECO SW02.md",
+    "03 NETW2/NETW2 SW06 Modul 7, 8.md",
+    "03 NETW2/NETW2 SW05 Modul 5.md",
+    "03 NETW2/NETW2 SW04 Modul 4.md",
+    "03 NETW2/NETW2 SW03 Modul 3.md",
+    "03 NETW2/NETW2 SW01 Modul 1.md",
+    "06 CYSECO/CYSECO SW06.md",
+    "04 INTROL/INTROL SW06.md",
+    "04 INTROL/INTROL SW05.md",
+    "04 INTROL/INTROL SW03.md",
+    "assets/INTROL/02a.OpenYourMind_v16_HS25.pdf",
+    "assets/INTROL/01a.IntroLab Einfuehrung-v12 HS25 RPo 20250902.pdf",
+    "06 CYSECO/CYSECO SW05.md",
+    "05 DB&S/DB&S SW03 + 04.md",
+    "02 DMATH/DMATH SW01 Zusammenfassung.md",
+    "assets/NETW2/SRWE_Module_8-NETW2.pdf",
+    "assets/NETW2/SRWE_Module_7-NETW2.pdf",
+    "assets/NETW2/SRWE_Module_6-NETW2.pdf",
+    "assets/NETW2/SRWE_Module_5-NETW2.pdf",
+    "assets/NETW2/SRWE_Module_4-NETW2.pdf",
+    "02 DMATH/DMATH SW02.md",
+    "06 CYSECO/CYSECO SW03.md",
+    "06 CYSECO/CYSECO SW01.md"
   ]
 }
