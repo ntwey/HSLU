@@ -1,0 +1,497 @@
+
+
+===== Seite page-1 =====
+
+HSLU en Dr. Reto Berger
+
+DMATH-ALGO
+
+Mathematische Induktion
+
+Herbstsemester 24
+
+Serie 7
+
+Lernziele
+o Sie verstehen das Prinzip der mathematischen Induktion.
+
+o Sie kennen den Unterschied zwischen schwacher und starker In-
+duktion.
+
+o Sie können Behauptungen induktiv beweisen.
+
+Die mathematische Induktion ist eine Technik für Beweise, die direkt mit
+der Rekursion vergleichbar ist. Genauso wie eine rekursive Lösung eines
+Problems auf Lösungen für eine kleinere Instanz desselben Problems be-
+ruht, basiert ein induktiver Beweis einer Behauptung auf Beweisen für eine
+kleinere Instanz derselben Behauptung.
+
+Ein umfassendes Verständnis der Rekursion hängt von einem gründlichen
+Verständnis der mathematischen Induktion ab. In der Informatik tauchen
+erstaunlich viele Anwendungen der mathematischen Induktion auf: Die
+Analyse der Korrektheit von Algorithmen, das Zählen der Anzahl von Bit-
+strings, die eine bestimmte Form haben, und viele andere.
+
+
+
+
+
+===== Seite page-2 =====
+
+HSLU ten Seite 1
+
+Frage 1: Was ist mathematische Induktion?
+
+Das Ziel der mathematischen Induktion ist es, für ein Prädikat P(n) mit
+einer natürlichen Zahl n als Variable, zu beweisen, dass die Aussage
+
+Vne{neN:n>ns6}: P(n)
+
+wahr ist. Das Prädikat P(n) ist demnach für alle natürlichen Zahlen n
+grösser einer Startzahl no wahr.
+
+Bei der schwachen Induktion gehen wir wie folgt vor:
+
+o Induktionsverankerung.
+Wir weisen nach, dass das Prädikat P(no) für die Startzahl no wahr
+ist:
+
+P(n) = True
+
+o Induktionsschritt.
+Wir weisen nach, dass für alle natürlichen Zahlen n > no aus der
+Wahrheit von P(n) die Wahrheit von P(n + 1) folgen muss:
+
+Vne{neN:n>m}:(P(n)>P(n+1)) = True
+
+Die zweite Bedingung sorgt dafür, dass das Prädikat in der Tat für alle
+unendlich vielen natürlichen Zahlen n > ng wahr ist. Für ng = 3 gilt:
+
+P(3) ist wahr (Induktionsverankerung)
+Weil P(3)> P(4) wahr ist, muss auch P(4) wahr sein
+Weil P(4) = P(5) wahr ist, muss auch P(5) wahr sein
+Weil P(5) = P(6) wahr ist, muss auch P(6) wahr sein
+Weil P(6) > P(7) wahr ist, muss auch P(7) wahr sein
+
+Weil P(7) = P(8) wahr ist, muss auch P(8) wahr sein
+
+
+
+
+
+===== Seite page-3 =====
+
+HSLU ten Seite 2
+
+Mit diesem Verfahren können wir die Korrektheit von Algorithmen be-
+weisen, deren Input mit natürlichen Zahlen parametrisiert ist.
+
+Aufgabe 1: Es sollen vom Startwerte s die ersten n Zahlen, jeweils um d
+inkrementiert, zusammengezählt werden:
+
+s+(s+1d) + (s+ 2d) +(s+3d) +...+(s+(n- 1)d)
+
+Ist der folgende Algorithmus summe (s,n,d) eine korrekte Implementierung
+für diese Funktion?
+
+def summe(s,n,d):
+return n*s + n*(n-1)/2*d
+
+on Danley WA |
+
+summe(s,A, A)
+
+A’SHA-CAAN/ A
+
+ka =o
+
+fur waa st chev Atgontuums Lowes,
+
+|
+
+]
+
+Shit:
+SUWWALS, U, A) + Sew
+= WwiStulu-r/LA+tSt wc
+
+.
+Luc u Sev chav Argpritumus
+Kawer*
+
+USES + EMEA 44 wd
+CUA S + et, uld
+rs 4 (ASEAN ud
+
+UCU-A\ aa
+
+|
+
+|
+
+|
+
+AUMAAYS +
+
+|
+
+CWAYST rl.
+
+CUrAYS + |
+_ suwmwe (S,utA,d)
+
+chaunr ist Kay Akgorithurus
+QaAck Love Usd ‘Covert.
+
+|
+
+|
+
+
+
+
+
+===== Seite page-4 =====
+
+HSLU ten Seite 3
+
+Aufgabe 2: Es sollen vom Startwerte s die ersten n Zahlen, jeweils um q
+vervielfacht, zusammengezählt werden:
+
+sts +sP+sP +... +39” \
+
+Zeigen Sie die Korrektheit des folgenden Algorithmus mit schwacher In-
+duktion.
+
+def summe(s,n,q):
+return s*(q**n-1)/(q-1)
+
+Uewankev wry * Sarit:
+
+SUUAVA CCS A, AN Summe CSU, tt sq”
+= 5:0 '-A\/Lq-A) = be ei u
+= SA Owe u vorsach j a
+=s = 6 - a * |= sf |
+
+=
+
+I
+
+|
+
+{aq u=A Kowett. ir
+=
+= Summe CS Utd, A) dau auch Cur UA,
+
+Aufgabe 3: Es sollen die n ersten Quadratzahlen zusammengezählt wer-
+den:
+7? +22 +3°+4°+...+n?
+
+Zeigen Sie die Korrektheit des folgenden Algorithmus mit schwacher In-
+duktion.
+
+def summQuad(n):
+return n*(n+1)*(2*n+1)/6
+
+fay us A Larıekt.
+
+Lau Lav wry : Scluyit :
+
+SUWAWR Quadk CA) SUmMm Dual) + Eee
+A-CAHA CEASA /6 = woe st) + Curse
+A: L:-%3/E N Eos >
+Ar tow u Lorvelt
+
+— WCUrACT USHA) 4 Küng”
+
+MACUASANC LMA) + 6 CUAL
+
+6
+(inde) Lin Cima) 6 Cota) |
+
+|
+
+6
+—_ CAF LEW Foe GJ Cush) (mtZ) (tur)
+ra u 6
+suum Quad Cus A)
+Joun auch ur urA,
+
+I
+
+
+
+
+
+===== Seite page-5 =====
+
+HSLU ten
+
+Seite 4
+
+Aufgabe 4: Es sollen die ersten n ungeraden Zahlen zusammengezählt
+werden:
+
+1+3+5+7+...+(2n-]1)
+
+Zeigen Sie die Korrektheit des folgenden Algorithmus mit schwacher In-
+duktion.
+
+def summe (£,n,Q:
+
+return n**2
+
+U uraukev ung! Selyyalk:
+
+summelA) SUMB| CW) 4 (tur)
+= A” = whi + (Zur)
+a LQe wD kovwvekt,
+
+Zur un=A Lowekt, Urt LUAAA
+Cue ay”
+SKWMMECUN +A)
+
+Aan auck sur ard,
+
+ll
+
+Aufgabe 5: Zeigen Sie mit schwacher Induktion, dass die folgende while-
+Schleife nicht terminiert.
+
+n=0
+while (8**n - 3*x*n)%5 ==
+print('Hallo Welt!')
+
+n=n+ti1l
+at SMritt:
+Cao — 2°) % 5 ==0 Cr YAY YS ==0
+Ci1=- (1A == C&R -3°38)AS ==O
+OAs. == [ &*CS+3)- 8% 3) %S==0
+fav w=0 True. LES +8.3-8°3|%S==0
+res Ca 3°) 3]%
+—~— u aeneil
+
+dure & Auch S
+taubar 4eakloa v
+
+Rv u Tue,
+
+ROAM BKK u Ur.
+
+
+
+
+
+===== Seite page-6 =====
+
+HSLU Hochschule
+
+Luzern
+
+Seite 5
+
+Aufgabe 6: Zeigen Sie mit schwacher Induktion, dass die folgende while-
+Schleife nicht terminiert.
+
+n=0
+
+while 9**n%10 == 1 or 9**n%10 == 9:
+
+print('Hallo Welt!')
+
+n=n+t1
+UJ WOME HAY *
+
+Schritt:
+
+9% lO ==4 or I %lo== aon iga=d oy 3
+
+ie Io ==
+BY Y%lkg==H=A ov II YO
+
+Su u Trwue = MW%Khro=A V T"%ro=9
+
+A°2°/a ro ==A vor AMho=H= 9
+True oy False
+
+fay U=O0 Ivue.
+
+3: %ho 3:9°% ho
+= 3: NAO = 3°93 Sho
+=i § =
+
+=
+
+AQUA aueh Tür uUtA,
+
+Aufgabe 7: Zeigen Sie mit schwacher Induktion, dass die folgende while-
+Schleife nicht terminiert.
+
+n=0
+
+while 2**n47 == 1 or 2**n%47 == 2 or 2**nJ7 == 4:
+print('Hallo Welt!')
+n=nt+i
+
+Vvauker ua;
+
+Ww MERHA or DOME HHL ov 2%r==Y
+
+ASVot=z=HA OV Ayr==2 CY AMF H==+
+True ov Talse ov Tolse
+fur v=o True.
+Schmitt:
+ie
+
++=-1ov 2 %r==2 ov WD %P=ASY
+VL UWAtLH==A ov DUYwWHt HEL OV 1-2 ıt=mt
+Say u True =) DAHA V LKAFHELVUATRH
+
+2. Ar 2 %t
+
+= WA%Atr = 12%} =HELtYt
+= 2 = 4 ==
+
+= A
+don anh fury Vee
+
+Ur
+
+
+
+
+
+===== Seite page-7 =====
+
+=
+
+4
+
+HSLU ten Seite 6
+
+Aufgabe 8: Ein Algorithmus findeUberdeckung(n) soll eine Parkettie-
+rung mit Winkel-Fliesen (drei aneinanderhängende Quadrate, die nicht ei-
+ne Linie bilden) auf einem Schachbrett mit 2” Linien und 2” Reihen finden.
+Alle Schachbrettfelder, mit Ausnahme von einem, werden genau einmal von
+einer Winkel-Fliese überdeckt. Zeigen Sie mit schwacher Induktion, dass
+eine solche Parkettierung immer möglich ist, dass also ein Algorithmus
+implementiert werden kann, der immer so eine Lösung findet.
+
+Lvaukeruua . S suru:
+e— 2~—s £—— ai
+
+c— 2° —4 e— u
+| T, Lösung Losuug
+T Say w Rav wu
++4
+= _ i } A
+ri = dor T|\ösu jr}
+ily meh glas | lies [diene
+
+u dour auch Zur Uri,
+Aufgabe 9 (optional): Ein Algorithmus findeWeg(n) soll einen Weg für
+einen Springer auf einem Schachbrett mit n Linien und n Reihen finden,
+so dass der Springer jedes Feld mindestens einmal besucht. Zeigen Sie mit
+schwacher Induktion, dass so ein Weg für alle Schachbretter mit n > 4
+immer existiert, dass also ein Algorithmus implementiert werden kann, der
+immer so einen Weg für einen Springer findet.
+
+
+
+
+
+===== Seite page-8 =====
+
+HSLU ten Seite 7
+
+Frage 2: Was ist starke Induktion?
+
+Im Unterschied zu der schwachen Induktion können wir bei der starken
+Induktion alle bereits gezeigten Prädikate P(k) beim Induktionsschritt
+verwenden:
+
+o Induktionsverankerung.
+Wir weisen nach, dass das Prädikat P(no) für die Startzahl no wahr
+ist:
+P(n) = True
+o Induktionsschritt.
+Wir weisen nach, dass für alle natürlichen Zahlen n > no aus der
+
+Wahrheit von P(no), P(no + 1),..., P(n) die Wahrheit von P(n + 1)
+folgen muss:
+
+Vne{neN:n>no}:(P(ne)A...AP(n)>P(n+1)) = True
+
+Aufgabe 10: Ein Algorithmus münzen(n) soll für einen Geldbetrag von
+n > 4 Franken eine Anzahl a Zweifränkler und eine Anzahl b Fünffränk-
+ler bestimmen, so dass die Summer all dieser Münzen n Franken beträgt.
+Zeigen Sie mit starker Induktion, dass so eine Menge von Münzen immer
+
+existiert, dass also ein Algorithmus implementiert werden kann, der immer
+Anzahlen a > 0 und b > 0 findet.
+
+Umomkenuug » Schritt:
+
+Ye WHO'S Usd = (u-ı)+2
+
+Say wet git es Lösungen Gay 4,S,...,nA,n
+eıue Losuug. = ahs wre & 2.
+
+S= ORAS = CarAyvr+ bo S
+
+Sur u=S tot es Hau auch UUe Losung Sur Uta
+
+ewe Losuna.
+
+
+
+
+
+===== Seite page-9 =====
+
+HSLU ten Seite 8
+
+Aufgabe 11: Zeigen Sie mit starker Induktion die Korrektheit von folgen-
+dem Sortieralgorithmus:
+
+import random as rd
+def quickSort(A):
+if len(A) <= 1:
+
+return A
+pivot = rd.randint(0,len(A)-1)
+L= []
+R = []
+for i in range(len(A)):
+if i != pivot:
+
+if Ali] < Alpivot]:
+L.append(A[i])
+
+else:
+R.append(A[i])
+L = quickSort(L)
+R = quickSort (R)
+
+return L + [Alpivot]] + R
+Setre LARulA)=Ww
+
+Luramkevumg | Samt:
+wick Sout CL 1) quick Sort CLs, Aa, -----; Anaad)
+Sür u=O0 \Kovrect N CLonrerte iu L SiUch LLewmev alsa
+
+Atle Chlauneunke iu R Stud Qrosserglaich alsa
+
+au \ck Sort C fa,1)
+PaAlLy) fue wurd Leuk) Sw
+
+= La,)
+
+Lav U=A Lowelt KG O,A,Zy......,wA,n Lovvect
+
+(Lwud R siud also sortiert )
+
+Aunuun auch Sur AXA
+
+
+

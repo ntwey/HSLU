@@ -1,0 +1,351 @@
+
+
+===== Seite page-1 =====
+
+HSLU en Dr. Reto Berger
+
+DMATH-ALGO
+
+Prädikatenlogik
+| ____.|_____\
+
+Herbstsemester 24
+
+Serie 3
+
+Lernziele
+o Sie können Wahrheitswerte von Prädikaten bestimmen.
+
+o Sie verstehen die Bedeutung des Allquantors und des Existenz-
+quantors.
+
+o Sie können Aussagen mit verschachtelten Quantoren richtig aus-
+werten.
+
+o Sie können die Negation vor den Quantoren eines Prädikats kor-
+rekt hinter die Quantoren umschreiben.
+
+Die Aussagenlogik, die wir in der Serie 2 erörtert haben, bietet uns eine
+formale Notation zur Kodierung boolescher Ausdrücke. Diese Ausdrücke
+sind jedoch relativ einfach. Die Prädikatenlogik ist eine allgemeinere Form
+der Logik, in der logische Ausdrücke aus so genannten Prädikaten mit
+Variablen aufgebaut werden, um präzisere Aussagen zu treffen.
+
+
+
+
+
+===== Seite page-2 =====
+
+HSLU ten Seite 1
+
+Frage 1: Was ist ein Prädikat?
+
+Eine Aussage ist immer wahrheitsdefinit. Sie hat also entweder den
+Wahrheitswert wahr oder falsch. Im Gegensatz dazu hat ein Prädikat
+Lücken, die mit Variablen bezeichnet werden. Erst wenn diese Variablen
+mit konkreten Werten ersetzt werden, entsteht eine Aussage.
+
+o sumEqualToFive(x,y): «Die Summe von x und y ist Fünf.»
+
+ist ein Prädikat mit den zwei Variablen x und y, die stellvertretend
+für zwei integer stehen.
+
+o Pal(s): «Die Zeichenkette s ist ein Palindrom.>
+
+ist ein Prädikat mit einer Variablen s, die stellvertretend für einen
+string steht.
+
+Definition 1: Ein Prädikat ist ein Satz mit Variablen. Wenn diese Va-
+riablen mit Werten aus einem gegebenen Vorrat, dem sogenannten Uni-
+versum, ersetzt werden, muss aus dem Prädikat eine Aussage entstehen.
+
+Seien x und y aus dem Universum Z. Dann ist
+
+o sumEqualToFive(1,3): «Die Summe von 1 und 3 ist Fünf.>
+eine Aussage mit Wahrheitswert 0.
+Sei s aus dem Universum {w : w ein Wort im Duden}. Dann ist
+
+o Pal(REITTIER): «Die Zeichenkette REITTIER ist ein Palindrom.>
+eine Aussage mit Wahrheitswert 1.
+Aufgabe 1: Für a,b, c,n aus dem Universum N sei
+
+o Fermat(a,b,c,n): «Die Summe von a® und b” ist c™.>
+
+Finden Sie für dieses Prädikat Werte a,b,c und n aus dem Universum, so
+dass drei wahre und drei falsche Aussagen entstehen.
+
+Terwmatr (AAA A) Latsch Feyrunok (3,4,5,2) wary
+FarmarlA,A, Ar) Katscl Fey mark (4,3, 5,2) waky
+
+Fer mad CA, A, A\3) Ratsch = Fexuror (12 A620, 2) way
+
+
+
+
+
+===== Seite page-3 =====
+
+HSLU ten Seite 2
+
+Frage 2: Was sind Quantoren?
+
+Wenn wir in einem Prädikat alle Variablen durch Werte aus dem Universum
+ersetzen, entsteht eine Aussage. Durch Generalisierung und Speziali-
+sierung entsteht aus einem Prädikat direkt eine Aussage.
+
+Definition 2: Sei P(x) eine Prädikat mit x aus einem Universum U.
+o Der Allquantor V macht aus P(x) die Aussage Wx € U: P(x).
+
+Vx € U: P(x) ist a : wenn P(x) für alle x wahr ist
+
+falsch : sonst
+o Der Existenzquantor 4 macht aus P(x) die Aussage Ix € U: P(x).
+
+falsch : wenn P(x) für alle x falsch ist
+
+wahr : sonst
+
+dx € U: P(x) ist
+
+Für ein Universum mit nur endlich vielen Werten können Generalisierung
+und Spezialisierung auch ohne Prädikatenlogik dargestellt werden.
+
+Aufgabe 2: Sie P(x) ein Prädikat mit Universum U = {z1,23,...,n}-
+Schreiben Sie die folgenden zwei Aussagen ohne Quantoren und geben Sie je
+einen Algorithmus an, der den Wahrheitswert solcher Aussagen berechnet:
+
+a) Wx EU: P(x) = PORYA TOK) A... N PCR
+
+Alaorıtumus: fox Se Aa NK Ka 8S
+~ iF wot POx) : veruru False
+vAuru True
+
+b) KEU:Px)= POA V Pix,)Vv...v ro
+
+u \$ Pax): veruru True
+vun False
+
+
+
+
+
+
+===== Seite page-4 =====
+
+Seite 3
+
+Aufgabe 3: Bestimmen Sie den Wahrheitswert folgender Aussagen:
+
+a) Vx EN: (« ist gerade» > <r +1 ist ungerade») wahv
+
+b) da EN: («a ist Primzahl» A «x grösser als 100 > A «x ist gerade >) Talsch
+
+c) dx € Z: <2? ist kleiner als x > falsc\
+
+d) dx ER: <2? ist kleiner als > Wav
+
+e) Va EN: (<2? ist gerade> & <z ist gerade>) Wwoakv
+
+f) Gegeben sei die Liste a = [3, 2, 1,1, 4,4, 2,3, 1].
+Vi € {1,2,..., 9}: (34 € {1,2,...,9}: a(i = 7) Aali] =alj]) wakv
+
+Bei verschachtelten Quantoren ist im Allgemeinen die Reihenfolge der
+Quantoren relevant!
+
+Aufgabe 4: Ein frivoles Beispiel ist der Titel des Hits <Everybody Loves
+Somebody» (1947 von Dean Martin gesungenen). Es gibt zwei plausible
+Interpretationen des Titels über dem Universum U einer Teilmenge von
+Menschen. Beschreiben Sie beide Aussagen in natürlicher Sprache:
+
+o Veel: (3y € U: x loves y)
+
+Jedev Meusch x \u U Meloy aiMeu
+
+TMeuschenm Y wa U,
+
+2.8. LAN U= 8,6, DE, 4
+
+Alieot C Blieot E,C liebt A, Oliebt F, Eliebr B , Fliebt D
+
+o dy EU: (Vx EU: x loves y)
+
+Es ait euer Meuscheu y iu U, ACY VOW
+jedem Meuschhau X iu A aalıeor WANA |
+
+2.8. uy U=4A,8,C,0,5,F3
+
+AlieotC, & lielet CC Lieot CB leobtC & lielotC, F Xelot C
+
+
+
+
+
+===== Seite page-5 =====
+
+HSLU ten Seite 4
+
+Aufgabe 5: Gegeben sind die folgenden sechs Matrizen:
+
+114111 1) 0000 0 0) [bp 0 0 1 0 0*/
+II ı 1 1 000000 100000
+ıı 1111 010000 011100
+A=tii ı a 1] ®=]000000| ““loo0001 0
+ııı ı 11 000000 00000 0
+ııı 1 11) 000000) \0 0 0 10 1/
+0100 0 0) 0000 0 0) (0 0 0 0 1 0)
+010000 000000 000010
+110100 Ita ı 11 000010
+P=lo 00111] ==lo0000 0} “lo 0001 0
+000010 000000 000010
+010100) 000000) 000010)
+
+Betrachten Sie das Prädikat P(M,i,j) : mi; = 1. Bestimmen Sie je für M
+alle Matrizen A, B, C, D, E und F, so dass die Aussage wahr ist:
+
+a) Wi € {1,2,...,6}: (Vj e {1,2,...,6}: P(M,i,j))
+fur NAA,
+
+b) Vj € {1,2,...,6}: (Vi € {1,2,..., 6}: P(M, i, 3)
+Lav =A.
+
+c) 3e {1,2,...,6}: (Ay € {1,2,..., 6}: P(M, i, j))
+AGy M=A,R,C,D,E UWA.
+
+d) Aj € {1,2,..., 6}: (# € {1,2,..., 6}: P(M,i,j))
+ur N= A,B,C) O/B UWA F,
+
+e) Wi € {1,2,...,6}: (Aj € {1,2,..., 6}: P(M, i, j))
+fuy N= A,D und F
+
+f) Vj € {1,2,...,6}: (& € {1,2,..., 6}: P(M, i, 7)
+dur N= A,C wid E
+
+g) ie {1,2,...,6}: (Vj € {1,2,...,6}: P(M,i,j))
+tur N= A und E
+
+h) Aj € {1,2,..., 6}: (Vie {1,2,...,6}: P(M, i, j))
+fuy N=A und rF
+
+
+
+
+
+===== Seite page-6 =====
+
+HSLU ten
+
+Seite 5
+
+Frage 3: Was ist die Negation von Quantoren?
+
+Jemand behauptet einen Algorithmus implementiert zu haben, der für je-
+den Input gemäss der Spezifikation den korrekten Output berechnet.
+
+Wenn wir das Gegenteil belegen möchten, was würde das bedeuten?
+
+o Nun, wir können einen Fehler im Code aufdecken, wenn wir einen In-
+
+put angeben, für den die Implementierung nicht den korrekten Output
+berechnet.
+
+o Mit der Prädikatenlogik können wir das wie folgt ausdrücken:
+(Vz EU: P(x)) = 32 € U: -P(z)
+Beachte. 1 C¥K eu. Pox)
+
+a CRIA BOK) AL A PO«u))
+A PCI VUAPCKLYV VAP Ox)
+AXEU:NPIx)
+
+De Horgau
+
+Il All
+
+Jemand behauptet einen Algorithmus implementiert zu haben, der min-
+destens bei einem Account das Passwort findet.
+
+Wenn wir das Gegenteil belegen möchten, was würde das bedeuten?
+
+o Nun, wir können nachweisen, dass die Implementierung bei allen Ac-
+counts nicht das richtige Passwort berechnet.
+
+o Mit der Prädikatenlogik können wir das wie folgt ausdrücken:
+
+(32 € U: P(x)) = Vx € U: -P(x)
+
+Beachte: A CAxeU +. PCx))
+
+a CRY PK) Vv .... V POLY)
+a PC IA IPs, TA au AP
+VKEU:NPIx)
+
+De Horgau
+
+Ill Il
+
+
+
+
+
+===== Seite page-7 =====
+
+HSLU ten
+
+Seite 6
+
+Aufgabe 6: Bringen Sie die Negation in den folgenden Aussagen hinter
+alle Quantoren:
+
+a) a(dy ER: (Vz ER: x <y))
+
+= Vy7ER 1 C¥KER: K<y)
+VyER.CAKER .ACK<SY))
+VWyER. CAxE Ri. X27)
+b) 7(W2 € Z: (Ay € Z: x =y+1))
+
+= ish A: ha layezı £444)
+
+Axel: (lVye2.a(x=yt4))
+
+IXEeL:(Vya2.X#YyrA)
+
+|
+
+I
+
+Il
+
+Ih
+
+c) „(Ir € U: (Wy € U: (Az € U: P(z,y,z))))
+
+YxreU a (Wyeu:lAzeu: PO,7,2)))
+Vreu (Ay EUWU.r CA2EU~ PCx,,2\))
+Vreu:(IyeUu: WEEUs a POy,en)
+
+I
+
+i
+
+IK
+
+Aufgabe 7: Ubersetzen Sie den folgenden Satz in die Priidikatenlogik und
+negieren Sie dann den Satz:
+
+«Für jeden iPhone-Benutzer gibt es eine iPhone-App, die jeder
+seiner iPhone-benutzenden Freunde heruntergeladen hat.»
+
+Brauchen Sie die Bezeichnungen U für iPhone users und A für apps.
+PCx,y) LK x wUck i sind bestveauudert »
+Aly ay. CY hat a hevuntergeladaeu N
+Yrel:(aaeA: (Vvveu: Pa y= ay,a)) )
+
+1 (Y¥xeU: Caer: (vyeu: Po) avy,a)))
+I3xeU:(YaekA: GAyeu:raCPa n= @tya))))
+AKeU: WAEA: Aycu:7 la PWV RCya))))
+Jxeu:(¥aed: (Aye UU: CPO yVA7 @C,a))))
+
+i oth Mi
+
+
+

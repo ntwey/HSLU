@@ -1,0 +1,812 @@
+
+
+===== Seite page-01 =====
+
+HSL Hochschule
+Luzern Dr. Reto Berger
+
+DMATH-ALGO
+
+Komplexere Zähltechniken
+
+Herbstsemester 24
+
+Serie 9
+
+Lernziele
+o Sie können das Zählprinzip Inklusion und Exklusion anwenden.
+
+o Sie verstehen wie mit Rekursion Zählprobleme gelöst werden und
+können entsprechende Rekursionsbeziehungen aufstellen.
+
+o Sie verstehen wie mit erzeugenden Funktionen Zählprobleme
+gelöst werden und können entsprechende Funktionen aufstellen.
+
+Auch für einfach beschreibbare Mengen ist oft das Zählen ihrer Elemen-
+te ein nicht triviales Problem. Viele Zählprobleme können nicht mit den
+elementaren Zählprinzipien der letzten Serie gelöst werden. Schon einfache
+Fragen zu der Häufigkeit von bestimmten Mustern in Datenworten oder
+die Frage nach der Anzahl Primzahlen in einem bestimmten Bereich sind
+überraschen komplex und originelle Ideen zur Lösung sind nötig.
+
+In dieser Serie werden drei komplexere Zählprinzipien besprochen, die für
+Probleme in der Informatik wichtig sind? Das Prinzip von Inklusion und
+Ezxklusion ist eine Verallgemeinerung der Summenregel. Mit divide and
+conquer können Zählprobleme mit Rekursionsbeziehungen modelliert wer-
+den. Letztlich kann mit einer erzeugenden Funktion ein Zählproblem
+systematisch in ein algebraisches Problem überführt werden.
+
+
+
+
+
+===== Seite page-02 =====
+
+HSLU itz" Seite 1
+
+Frage 1: Was ist das Prinzip von Inklusion und Exklusion?
+
+Wenn wir eine Menge S als Vereinigung von einfacheren Mengen S},..., Sn
+schreiben, ist auch das Zählproblem einfacher, wenn
+
+S= SI UFHU...USn
+
+eine Partition ist.
+
+Merke: Nur wenn alle S;,59,...,S, paarweise disjunkt
+sind, können wir die Summenregel anwenden.
+
+Bereits mit zwei Mengen S; und 53 gilt die Summenregel nicht, wenn der
+Durchschnitt S$; S2 nicht leer ist:
+
+Beispiel: Der Zugang zu einer App wird mit einem PIN aus vier Ziffern
+geschiitzt, der nicht mit drei gleichen Ziffern beginnen oder enden darf.
+Wie viele ungiiltige PINs gibt es?
+
+Wir schreiben die Menge S aller ungiiltigen PINs als Vereinigung von
+
+S; ={z: der PIN x beginnt mit drei gleichen Ziffern}
+= {000, 111, 222, 333, 444, 555, 666, 777, 888, 999} x {0, 1,2, 3, 4,5, 6, 7,8, 9}
+
+und
+
+S_ = {a: der PIN z endet mit drei gleichen Ziffern}
+
+In beiden Mengen 5S; und S2 sind gemäss Produktregel 10 - 10 = 100 PINs
+enthalten. Aber das Anwenden der Summenregel
+
+IS| = |S; U Se| = |Sı| + [Se] = 100 + 100 = 200
+liefert ein falsches Ergebnis, weil die 10 PINs
+
+{0000, 1111, 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999}
+in S; und 5a enthalten sind.
+
+Sie werden mit |Si|+|S2| doppelt gezählt!
+
+
+
+
+
+===== Seite page-03 =====
+
+HSLU itz" Seite 2
+
+Wir finden aber die Anzahl PINs in S = $ı U S2, indem wir die 10 doppelt
+gezählten PINs einmal wegnehmen:
+
+|S| = |S, U S2| = 100 + 100 — 10 = 190.
+Allgemein gilt für zwei beliebige Mengen S; und S2 die angepasste Regel
+ISı U Se] = |Sıl + |S] — ISı N Sa]
+Wir zählen also zuerst die Überschneidung mit (Inklusion) und nehmen
+sie dann einmal weg (Exklusion).
+Bereits für drei Mengen wird dieses Zählprinzip anspruchsvoller, wie das
+die folgende generische Zerlegung zeigt:
+
+{1,2,3,4,5,6,7} = {1,4,5,7} U {2,4,6,7} U {3,5,6, 7}
+
+5 Sy So 5s
+Betrachten wir alle méglichen Uberschneidungen:
+u SN Sz = {4,7}
+ow SiN S3 = {5,7}
+Uy, 52 S3 = {6,7}
+Ct Ss, SNS. S3 = {7}
+
+Die Elemente 1,2,3 sind in keiner Uberschneidung, die Elemente 4, 5,6
+sind in genau einer Uberschneidung und das Element 7 ist in allen vier
+Uberschneidungen. Also werden in
+
+ISıl + |$2| + |S3|
+
+die Elemente 1, 2,3 korrekt gezählt, die Elemente 4,5,6,7 hingegen nicht.
+Wir korrigieren zuerst die Überschneidungen zweier Mengen. In
+
+|Sy S3| — |Sın Sa] — |Sı N S3| — |S2N Ss]
+
++ |S2] +
+
+werden die Elemente 1,2, 3,4, 5,6 korrekt gezählt, das Element 7 hingegen
+nicht. Nach dieser Korrektur fehlt das Element 7 in der Bilanz, weil es in
+allen Uberscheidungen zweier Mengen enthalten ist. In
+
+ISıl + |S2| + 183] — |Sı N Sel — |Sı N S3| — |S2N S3| + |Sı N S2N Ss
+werden dann alle Elemente korrekt gezählt, es gilt also
+
+|S; US2U S3] =4+4+4-2-2-2+1=7.
+
+
+
+
+
+===== Seite page-04 =====
+
+HSLU itz"
+
+Seite 3
+
+o Zählprinzip: Inklusion - Exklusion
+
+Die Kardinalität der Menge S = $ı U $2... U $, kann in vier Schritten
+berechnet werden:
+
+o Bestimme die Anzahl Elemente in allen Mengen Sj, S2,..., $„ und
+zähle diese zusammen. Bezeichne das Ergebnis mit Summe.
+
+o Bestimme die Anzahl Elemente in allen Überschneidungen einer
+geraden Anzahl von den Mengen Sj, 52,...,S, und zähle diese
+zusammen. Bezeichne das Ergebnis mit Exklusion.
+
+o Bestimme die Anzahl Elemente in allen Überschneidungen einer
+ungeraden Anzahl von den Mengen Sj, 2, ..., Sn und zähle diese
+zusammen. Bezeichne das Ergebnis mit Inklusion.
+
+o Dann gilt |S] = Summe + Inklusion — Exklusion .
+
+Die Summenregel ist ein Spezialfall von diesem Zählprinzip. Für paar-
+
+weise disjunkt Mengen Sj, S2,...,S, sind nämlich die zwei Ergebnisse
+Inklusion und Exklusion Null.
+
+Aufgabe 1: Prüfe diese Regel für die generische Zerlegung
+
+{1,2,3,4,5,6, 7,8, 9, 10, 11, 12, 13, 14,15} = {1,5,6,7,11,12,13,15} U
+{2,5,8,9,11,12,14,15} U
+{3,6,8, 10, 11, 13, 14, 15} U
+{4,7,9, 10, 12, 13, 14, 15}
+
+Cloer schuaraungaeanw vou Ube vschuehungen von
+
+aevadey Auraul Meugen ungeradev Qutakl Neugau
+ISASI=NSA DUS k= 4 ISıns,n8%| = Ades) = 2
+IS, Ssh 116, AK 1S USS] = 4 JSaA S.A Sal = [4AzASy= 2
+|S.0 Syl =|44, az 03,1831 = 4 IS. SAS.) = [fA iQ l=— 2s
+1S,9 Sg) = |18, 1,14 Ash] = * ISAS, VSa] = AMS yl = 2
+
+1S,aS,| = |43, 42,0445 51 = 7
+[Ss Sul = (4A, 13,14 151 = 4
+
+{S,AS,ASzASal =| {Asal = A
+
+I
+
+1S)
+
+\
+
+Rt Sr Vr 8 +(2r2+ 2432) —C4s ut ya er ae +A)
+
+Suse
+
+Mm
+UAKKUSLOW Ex Wr non
+= 37ıı @®-—-2S = AS Sf
+
+
+
+
+
+===== Seite page-05 =====
+
+HSLU itz
+
+Seite 4
+
+Aufgabe 2: Wie oft wird die Funktion doSomething() im folgenden Pro-
+gramm aufgerufen?
+
+n=1
+while n <= 1000:
+if n%2 == 0 or n{3 == 0 or n&5 == 0:
+
+doSomething ()
+n=n+t1
+
+S = ix: KK hood A x ist AU 2,30der S lekbow J = S.U S2U Ss
+I8,|=l4x : xs A000 A x isk Auch 2 ledbow {| = 100072 = Soo
+\$,|= 14x: xs 000 A x ist Auch 3 Alban {| = 4000/73 = 33:5
+1SJ=IA x: X<hooo A x Ist AUWd 5 kon >| = A000 JS = 200
+
+|S,.aS,z)= A000/%6 = A66 |S,0 S20 Sg] = 4908 430 = 33
+| SanScl = AQGOO/AGQ= ADO
+{S30 Ssl= A900 WAS = 66
+
+1S | = (S00 +333 +Zoa) + 3% - (AGE+hooT 66) = TS mar
+Aufgabe 3: Wie oft wird die Funktion doSomethingElse() im folgenden
+Programm aufgerufen?
+n=1
+while n <= 10000:
+if n%6 == 0 or n&7 == 0 or n%8 == 0:
+
+doSomething ()
+else:
+
+doSomethingElse()
+n=n+ti1
+
+S = 1K. KX KASOGE A *K 18t wicht Auch 6, + ode & taboo ¢
+IS] = Oooo - |SceU S;uS;|
+
+|S.\= k0000/6 = A666
+
+|\S;,|= 0000 // t = I+L&
+
+| Sel = 10000 /& = ALSO
+
+|Sen Sal = Koooa/4+#L= 138 |S.n S;nSz|= loooo /IER= ZI
+|Scn Sg \= Aoooo/ı14 = “LAG
+
+{340 Sel = A0000/S6= ATR
+
+i\S| = 10000- [(re6c+ AZURAAZSO) + SJ — (DIL HIGH 178) |
+= A00009 — 35H = 6129 wok
+
+
+
+
+
+
+===== Seite page-06 =====
+
+HSLU itz
+
+Seite 5
+
+Aufgabe 4: Wie viele Zahlen von 1 bis und mit 100000 sind durch die
+Primzahl 2, 3, 5 oder 7 teilbar?
+
+S= 1x: x<A00000 N x it dur 2,8,5 ode + Klar 4
+
+\S,|= 400000 4 2 = 50009
+| Sal = hocooe / % = 33333
+| Sel = hooooe |S = T0000
+( S3| = 400000 1 + = Ar LBS
+
+\S,1S;| = A00000 //6 = 46666 [S.A Sz AVS ¢| = 100006 /39 = 3333
+
+(Sra Sel = Aocooe Mo = 40000 IS2a Sgn S; l= 460006 +2 = 2380
+
+[San Sal= Oooo /AK = FAHD {Sa Sen Syl = 160008 (tO = AYA
+\Sın Scl= koooo0o/llAS = 6666 ISgAS EN Sy\ = A60008 /A0S = 352
+(S29 Syl = 400000424 = +Tt6A
+
+| Ss Syl= A0o0000 7/35 = TRSt
+
+|S,1SınS,nS,\= looooo FUG = 446
+
+|S) = AAF6AR + BO93B— 4A5ER — FTA+S Talk
+
+Aufgabe 5: Eine mögliche Strategie das Wort COMPUTER zu verschlüsseln
+besteht darin, seine Buchstaben zu vertauschen (z.B. PCRTOUEM). Bei wie
+vielen Vertauschungen steht mindestens ein Buchstabe am gleichen Platz
+(in PCRTOUEM steht z.B. E an gleicher Stelle wie im Wort COMPUTER)?
+
+Hinweis: Brauche die Zerlegung S; U S23U...U Sg, wobei S; die Menge der
+
+Vertauschungen bezeichnet, in denen der 7-te Buchstabe am gleichen Platz
+steht.
+
+IS,|= FL Lon ote 8 Mausem
+
+\S,nS,|= 6! Lon ote (S)= RB Lev- Schmitie
+Sansa = of Lu olla (%)= SE Bwy- Schmitte
+[SAS Wt Se Sal = 41 fun ate (8)= tO Ytor- Schwule
+ISVS. $49 SH Se] = St Für atte (L)= 56 Sev- Sduiate
+|SaszasınSsasenS,|= 21 COW ade C8)=28 Su-Scmütte
+ISN SAS ,ASyASEASEAS,\ = A fw aM (3) = & tor-Schmtte
+|SAS-AS,ASINIFAS.ASZASg\ = A
+
+Sumwa = % th = 0320
+
+Exttusion = (8)-6b + CR) tba CE) + A= 2483}
+mwusiou = (8)sb + (8) 364 (8) A= +064
+
+=) 40320 + 7064 — LAST = 25487 Worre
+
+
+
+
+
+
+===== Seite page-07 =====
+
+HS LU er Seite 6
+
+Aufgabe 6: Auf wie viele Arten können 7 Druckaufträge auf 5 Drucker
+verteilt werden, so dass mindestens ein Drucker frei bleibt?
+
+Hinweis: Brauche die Zerlegung S; U S2U...US5, wobei S; die Menge der
+Verteilungen bezeichnet, in denen der i-te Drucker frei bleibt.
+
+18, ut fa ota 5 einen tah
+
+IS; Sal = BF Lor atte (S)= AO Lev- Schmitie
+ISAS, Ss] = 2" Lon alla ({)= AO Bey- Scmwite
+ISas.ns;nS,|=A Sow atte (S\)= S Y4ov- Schmitle
+Sant, = ©
+
+Sua = St? = BARZO
+Exwuwnou = (£)- 34 (SA = ZARTS
+ulusrou = (£)-2 4O = A280
+
+
+
+
+
+
+===== Seite page-08 =====
+
+HSLU itz" Seite 7
+
+Frage 2: Wie kann mit Rekursion gezählt werden?
+
+Viele anspruchsvolle Zählprobleme können auch rekursiv gelöst werden.
+
+o Zählprinzip: Modellieren mit divide and conquer
+Wenn die Elemente einer Menge $ von einem ganzzahligen Parameter
+ng abhängen, kann die folgende Strategie zielführend sein:
+
+o Bezeichne mit s(n) die Kardinalität von S für ein beliebiges n.
+o Bestimme eine Rekursionsbeziehung für s(n).
+
+o Löse diese Rekursionsbeziehung auf und bestimme für den gege-
+benen Parameter no die gesuchte Lösung |S| = s(no).
+
+Häufig beschreibt der Parameter n die Länge der betrachteten Figuren
+oder die Anzahl der betrachteten Objekte.
+
+Aufgabe 7: In wie vielen Datenworten der Länge n-Bit gibt es keine zwei
+
+aufeinanderfolgende Nullen?
+, a ul
+S= S,US, wt $, = { ALTOVA ft Ke | j \S,| = scw-)
+“a “ >
+
+no I
+
+(LMT IN { 5 \8,|= scu-2)
+
+a— “ d
+
+S
+
+I
+
+ist gue Paver Hou, also at \SI=1SıHr ISl:
+
+w w
+SCu) = Scu-N+Scu-2) SCuU\= Qa: (oe) rs lo G2)
+sa)= 2, SC2ZVN=3 A eT
+cr AOA, 40, MY | SCAV = a (tte) T lo 18) =ı
+a = ts
+eo REA son= al) + b(t) =3
+pf ~—~~-4 =O acht) + bCA-Ts) = ‘¢
+ALYA4S ANE Achte) + Cl TE = AL
+ier id ee OC TSS - OCTETS) = A2- CATS
+6 (6-27 +4)= &-tTS
+b= 42-15) _ 9-3
+ats Ts) AO
+aces) = 4- SSSI ua) = HE
+OU ENe) 5 a t6S+427F) _ S+31F
+ge "| 1 AOCAtTE) Ao
+Scu)= s+e HE) + SS a)
+* 10 5 so 2 2.8, SUG)=ILT84
+
+
+
+
+
+
+===== Seite page-09 =====
+
+HSLUt:H"*
+
+Seite 8
+
+Aufgabe 8: Ein Computersystem akzeptiert nur Passwörter aus Ziffern, in
+denen eine gerade Anzahl Nullen vorkommt. Wie viele solche Passwörter
+gibt es?
+SCu) = Aurel Tasswortey hoy age w wrt
+
+a adır Om tahi Nw,
+
+— 17
+
+S= Su Sy wat 8,= | eRe |
+
+1 — u —
+
+o— NT
+S =} code Aue.o [x] : x+0%
+2 — —
+
+(ob ewe RarQnhou. &s ath also I Sl= \SI+ IS.) wat
+[Sil = aba Puck day Läuge Una unt wagerader Aut.’
+= „oa RwA chev Lounge ui" = SCu-A\
+ui
+
+= AO -— SCu-A\
+\S,I\= 3° 8 Cun-ay
+
+GQ130 : SiCuN= KON N = SOKA r A SCU-A)
+= &- scCu-A\ + AO"
+sei, as 3
+Touro gene Ber + |s Cu\ = &: scu-a) \
+w
+SW = A&B
+\ulhkowmoacua Bee. ! |scwW- LI CU-N= Ao |
+
+ut werd _ “ns
+whan x - Be Cure” 6) = ho
+wm: ho * — 9. Ber kot!- Ib = 10“
+
+“nA -
+
+O1. m: ko" 46 = A hO** 4 0
+ei = =
+(
+
+une Ss z b=0
+SW = S.ı0
+SOW) = Suc) + SpCu)\ = AI +10
+
+eci\i= 0:44 5-to° = 9 | toe + SK) SZ
+
+Also SCUV= O5-8°%* FAO Passwovtey chev Lauge Wie
+
+
+
+
+
+
+===== Seite page-10 =====
+
+HSLUt:H"*
+
+Seite 9
+
+Aufgabe 9: Wie viele Datenworte der Länge n-Bit gibt es, die keine drei
+benachbarte Nullen enthalten?
+
+Z
+
+S= 8.VS.0 S82 wat 3-1 am} ; IS= sun
+
+¢—_— “st
+
+uM
+
+I 4 —
+AO
+
+S.= Aue} , \S,4= Scu-2)
+
+§.= A est} , 1S,\= Scu-%)
+
+— Uu-I
+
+ist ame Roach Hou, ALLO aut LS) = ASATIS U4 (Ss
+
+SCU\ = SCu-A\+ SOU" 2) 4 SCHI)
+tha 2, ieh, SBS +
+
+oO 00 OOA
+OAA
+
+AO 40S
+
+AA AOA
+
+AAO
+
+a AA
+
+Das ISt Aue Lineave Koewuroa ene
+
+Kekuyetous betreuung Gaur GAvyad I,
+
+Dea Bus Losung chasav Be Heluuna Sk
+S2ky ausprucusvoll,
+
+GIy KOuUKBA nun Albev che. Lösungen
+vekuv MO voracuuaı. E.B Saw A= AD’
+
+SCH) = SOANA SC2UV*4 SCORN = LEH = AB
+SCS) = BCTV4 SCBSV4 SCH) = HA F413 = UY
+
+S(6) = SCBV4 SCH) * SOS) = +3 +2 = Ht
+SOR) = SCHUN* SCSI + SCG) = A3424 4 KH = M
+SCORN = SOSV*KSCEV ESCH = L444 + = AUDI
+SOS) = SCGVASCH) + SOR) = HHH BALKANS = Lt
+
+SCAB) = SCH SCBV4FSOB) = BAFAETAVUTY = SO4
+
+
+
+
+
+
+===== Seite page-11 =====
+
+HSLU itz"
+
+Seite 10
+
+Aufgabe 10: Wie viele Datenworte der Linge n-Bit gibt es, die das Muster
+01 enthalten?
+
+€ u —
+$= %,US, wat 9, um 3
+
+d—— w- § ———
+
+€ u >
+a \ \_eutuäak OA wich | \ 4
+
+he
+
+Wt Vue PavnHou.
+
+© [Syl = scu-N:2 ee Br Laan
+OAeyY SUM,
+
+U _ 4-4 ——
+
+Why SSO «nas. 9
+A@OG-=-- = ©
+AAO .--... 09
+AAA & u wore
+
+enthalten OA wudut. Das
+Dasken Woy * AAN... A COUNRY
+
+Wwiv abay war Kew u-keu
+
+fait wicht so ev ARKELA dass
+Aouı OA autalten isk.
+
+weqeu \SI=1IS+ ISLE. Iscmi\= 2:sCu-N-
+A= oO
+
+TAO nog ane Behtdamug SOK) = 2-SCu-A)
+3 Sata Beteuuur \ LEER Ta L-SCu-Al = U-A
+
+Omegat?, Sc N= Va uth
+wur lo~ LOW uR- +o) = U-A
+
+- BA MA TM = = Anw-A
+a m
+WAS A b=-A
+
+SOW = SUC + Seow)
+SCA) = RZ =O & GEHN OLSO SCuU\= 27~-U-A
+
+
+
+
+
+
+===== Seite page-12 =====
+
+HSLU itz" Seite 1
+
+Aufgabe 11: Wie viele Möglichkeiten gibt es eine Treppe mit n Stufen
+hochzusteigen, wenn eine Stufe oder zwei Stufen pro Schritt erlaubt sind?
+
+bau Karırımn Schott
+Muy 2ıue Brake
+
+| A \ ) \S,\= Stu
+
+gern fale ghtnn Scaurik
+zwei Shaken
+
+(3
+8. =] yas \ ; lesen)
+
+ist aaur Powrhou, Ahso quat VSI = AS AANS A:
+
+”
+l
+YP
+C
+D
+
+Pr
+cr»
+I\
+
+SOU) = Scu-Nt SOU 2)
+
+SCAV=A
+<2) = 2
+
+Das ist die grace Ra huay's auslegen wie iu hey
+Aus qabe ?), wavy Kr RuLouaswerte sur Anvdeyvs:
+
+w “uu
+eéfuy= G: (ei) + lo GS)
+
+‘ A stTs
+sty = alt) + eC) = 4 | ee eee
+Say = aly + by =2 “se
+
+a0 scuy = (FEST) (SENSE)
+
+2 p=
+
+
+
+
+
+
+===== Seite page-13 =====
+
+HSLU itz Seite 12
+
+Frage 3: Wie wird mit erzeugenden Funktionen gezählt?
+
+Viele anspruchsvolle Zählprobleme können in eine lineare Gleichung über-
+setzt werden, so dass die Lösung des Problems der Anzahl Lösungen dieser
+Gleichung entspricht. Wie können wir aber die Anzahl Lösungen von einer
+linearen Gleichung bestimmen?
+
+Beispiel: Wie viele Lösungen hat die Gleichung
+sıtm+23=1,
+
+wenn zı € {2,3,4}, ro € {3,4} und z3 € {4,5} gelten muss?
+
+Idee: Simuliere das Addieren der Variablen xı, 72, 73 unter den gegebenen
+Einschränkungen mit einer Funktion, die alle Summen erzeugt:
+
+(a? + 2 dr zr’) . (x3 aj z*) . (a? al 2?)
+
+Wie nun die gesuchten Summen £&ı+22 +23 entstehen, sehen wir beim
+ausmultiplizieren des Produkts:
+
+art + g2t3ts + gett + a2t4+5
+m git3t4 4 23t3+5 4 gittt4 + gotats
+
+245 5
++ git3+4 + 24+3+5 4 git + itt
+
+Sie stehen allesamt als Exponenten in den Potenztermen x!!. Werden nun
+gleiche Summanden zusammengefasst,
+
+oo tl 4 lg gly 10g gly gly p12 4 My 7124 7124 713
+= 29+ 32442" + 327428
+
+zeigt der Koeffizient 4 im Term 421!, dass es 4 Lösungen gibt.
+
+Weil fiir diese Rechenoperationen (Ausmultiplizieren und Zusammenfas-
+sen) effiziente Algorithmen bekannt sind, habe wir mit diesem Verfahren
+ein systematisches Vorgehen, um die Anzahl Lösungen von solchen Glei-
+chungen zu bestimmen.
+
+
+
+
+
+===== Seite page-14 =====
+
+HSLU itz" Seite 13
+
+o Zählprinzip: Modellieren mit einer erzeugenden Funktion
+Wenn die Elemente einer Menge S mit Summen beschreibbar sind,
+kann die folgende Strategie zielführend sein:
+
+o Beschreibe alle Elemente der Menge $ mit einer Gleichung.
+o Bestimme eine erzeugende Funktion für die Lösungen.
+
+o Multipliziere die Produkte in der erzeugenden Funktion aus und
+fasse gleiche Potenzen zusammen.
+
+Die Kardinalität der Menge S entspricht dann dem Koeffizienten des
+entsprechenden Potenzterms.
+
+Aufgabe 12: Ein roter, blauer, grüner und gelber Würfel werden geworfen.
+Wie viele verschiedene Wurfbilder mit Augensumme 13 gibt es?
+
+3 4
+Kae Ke Ket KG | Saat‘)
+
+Wk x € 4,2,3,4,9,6%
+2,e14,2,34.8 3
+¥,E4A,LS, 4,5, 63 NSS AKO WwnLloitcerv.
+BE 45, 6}
+
+25 A
+= AX +--+ AtOx et ia
+
+Aufgabe 13: Auf wie viele Arten können 8 gleiche Jobs auf drei verschie-
+dene Server verteilt werden, wenn jeder Server mindestens 2 aber héchstens
+4 Jobs verarbeiten soll.
+
+xı: GQurakrl Vols Kas Sevuae A € 12555
+Xu; Qu rar Vols Kus Sevuree 2 € 12.8.3
+X: Qu rar Vols NS Sevuer 3 o € 4 2.5,%%
+
+ES wuSS xX, KL X, = 8 qaltau.
+
+Ev seu gan he Fuartkrows Che Ke ay
+GUSWAU RAD OLA Trew aan Wark a EZ
+9 a Gx Oe xe Gh ae 3x07 4x8
+
+Es rot 6 WA dg rrcliarkerr
+
+
+
+
+
+
+===== Seite page-15 =====
+
+HSLU itz" Seite 1
+
+Aufgabe 14: Ein Geldautomat akzeptiert 1, 2 oder 5 Franken Stiicke.
+Wie viele Möglichkeiten gibt es einen Betrag von 15 Franken mit solchen
+Münzen
+
+a) zu bezahlen?
+
+b) der Reihe nach einzuwerfen?
+
+Lösen Sie diese Aufgaben mit erzeugenden Funktionen.
+
+a) x“: Bewaa hey A Fr. ShKicke & AQA,2)-- AE Y
+xq: Bewaa hey 2 Fr. SKircke € 40,24, u THF
+xo Be waa hey S Tr. Shrcke & 10,5, LOA %
+Es Wass Xe KL tx. = UNL qattau.
+
+Ex zen mask Ae TuUuthiour
+
+% A au % o Ss. 4 AS.
+Care ee er) ee Cae ear tr as
+GuUsUAu RAT OLA gray aan Bank usa men Lassen |
+4 3 38 3 3¢
+cere ee a ee ee ate en at” 4 Fe +
+BES HO META AE KE NO KPH AB DE AQ 284
+
+13 26
+VOTH LOR 22 «Se xT DI VEN UD ht IL
+4
+LL x'F + LOx'Se Lontr ABNF HARKS AG AMY SAB IE +
+AA KOO? KP TKD a OE Soe HK Bx THE WIE TZ CE HA
+
+es quot AR sau uk.
+
+6) > = ig M me U I CS cw acca Me) Sir st ame Parhhou
+
+WAL Sis 4 wat © Murten AS Fr ciMwen Een 4
+x: Ake WOnte © 442,53
+
+sen ie TAMA EAAUTY .
+
+Ex daa sucka FUkUuow + Coan ae \c
+QLSO totor. Cx'+ re er) + u a  )
+UGA Ausmultiptteureun uud yusamman LASS
+
+Lindau wiv IS ASK TE eo ABN B'S te ex?
+ES zu ot ABYSS Woy uch
+
+
+
+

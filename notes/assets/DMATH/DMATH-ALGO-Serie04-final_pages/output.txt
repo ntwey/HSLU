@@ -1,0 +1,607 @@
+
+
+===== Seite page-01 =====
+
+HSLU en Dr. Reto Berger
+
+DMATH-ALGO
+
+Beweiskalküle
+
+Herbstsemester 24
+
+Lernziele
+
+o Sie kennen den Unterschied zwischen semantischem Folgern und
+syntaktischen Ableiten.
+
+o Sie verstehen wie der Resolutionskalkül für die Aussagenlogik
+funktioniert.
+
+o Sie können Aussagen in Konjunktive Normalform umrechnen.
+
+o Sie verstehen die Bedeutung der Theoreme von Kurt Gödel für
+die Informatik.
+
+In der künstlichen Intelligenz sind Informatikerinnen und Informatiker dar-
+an interessiert, aus bestehendem Wissen neues Wissen herzuleiten, bezie-
+hungsweise Anfragen zu beantworten. Aus einer bestehenden Wissensbasis
+WB, die aus einem umfangreichen logischen Term besteht, soll ein auto-
+matischer Beweiser zeigen, dass weitere Aussagen aus dieser WB folgen.
+Hierfür werden deklarative Programmiersprachen verwendet. Bei der logi-
+schen Programmierung wird also das zu lösende Problem aus seiner Spezi-
+fizierung als logische Aussage formuliert. Ein logisches Programm ist dem-
+nach eine Beschreibung eines Teils der Welt. Über Anfragen an das System
+werden dann nach bestimmten Regeln Lösungen berechnet.
+
+
+
+
+
+===== Seite page-02 =====
+
+HSLU ten Seite 1
+
+Frage 1: Was ist ein Beweiskalkül?
+
+Nehmen wir an, dass eine Wissensbasis durch einen logischen Term WB
+beschreiben wird.
+
+Definition 1: Ein logischer Term Q folgt aus einer Wissensbasis WB,
+wenn für alle Interpretationen der Signatur, für die WB wahr ist, auch
+der Term @ wahr ist. Diese semantische Folgerung schreiben wir mit dem
+
+Symbol WBF Q.
+
+Sei zum Beispiel WB = (AV B) A(C V (>BA-W7A) V B) und Q = AV B:
+
+Aufgabe A Augfzabe 2
+A B Cc| WB Q W8BY}Q WwB8MQ
+1 ı 1 1 1 A 6)
+1 10 1 1 A s
+1 o 1 1 1 A ad
+100 0 1 A =
+0 1 1 1 1 A iS
+0.10 1 1 A fe)
+0 oOo 1 0 0 A Oo
+0 oO 0 0 0 A ro)
+=T =F
+
+Es gilt also (AV B) A(C V(=BA-WA) V B) F (AVB
+s gilt also (. ner wares
+
+Es gibt einen wichtigen Zusammenhang zwischen der Folgerung und der
+Implikation.
+
+Deduktionstheorem: Eine Aussage () folgt genau dann semantisch aus
+einer Wissensbasis WB, wenn WB => Q allgemeingiiltig ist.
+
+Aufgabe 1: Prüfen Sie mit einer Wahrheitstabelle, dass
+
+AVB)A(CV(-BA-A)VB AVB
+(AV B)A( as )V B) = ( : )
+
+in der Tat eine Tautologie ist. Können dies auch mit den Rechengesetzen
+der Aussagenlogik nachweisen?
+
+(CAV BYA (CCV GA BATA) VB)) v (AVB)
+a CAVB) VA (Cv AB ATNA\Y S&S) v CAVB)
+ICAVB) Vv CAVE) V ACC VV OBMA)VB) = T
+
+” os
+
+al
+
+
+
+
+
+
+===== Seite page-03 =====
+
+HSLU ten Seite 2
+
+Dass Q aus WB folgt, können wir also mit Hilfe einer Wahrheitstabelle
+nachweisen, in dem wir prüfen, ob WB => Q eine Tautologie ist. Dieses
+Beweisverfahren hat den Nachteil, dass es im Worst-Case bei grosser An-
+zahl aussagenlogischer Variablen eine sehr lange Rechenzeit hat.
+
+Wenn Q aus WB folgt, ist nach dem Deduktionstheorem WB = Q allge-
+meingiiltig. Das ist aber genau dann der Fall, wenn
+
+(WB => Q) = ->(-WB Vv Q) = WBA-Q
+unerfiillbar ist. Es gilt also:
+
+Widerspruchsbeweis: Eine Aussage ( folgt genau dann semantisch aus
+einer Wissensbasis WB, wenn WB A-Q eine Kontradiktion ist.
+
+Aufgabe 2: Prüfen Sie mit einer Wahrheitstabelle, dass
+
+(AV B) A(CV (=BA7A)V B) A (AV B)
+WB Q
+
+in der Tat eine Kontradiktion ist. Können dies auch mit den Rechengeset-
+zen der Aussagenlogik nachweisen?
+
+I
+
+wen 12Q
+
+CAVBY A ACAv B) A CCN ABAIAANWVB)
+=F
+
+FA COVOABARA\V BY)
+
+=
+
+Il
+
+))
+
+Statt mit einer Wahrheitstabelle die semantische Folgerung WB F Q zu
+prüfen, wäre es wünschenswert durch syntaktische Manipulationen an den
+Termen direkt die Folgerung zu zeigen (also ohne die Interpretationen mit
+Wahrheitswerten zu brauchen).
+
+So eine Manipulation an den Termen nach bestimmten Regeln nennen
+wir eine syntaktische Ableitung. Die Gesamtheit der erlaubten Regeln
+heisst ein Beweiskalkül.
+
+Definition 2: Ein logischer Term Q ist eine Ableitung aus einer Wissens-
+basis WB, wenn er nach Regeln eines Beweiskalküls hergeleitet werden
+kann. Syntaktisches Ableiten schreiben wir mit dem Symbol WBF Q.
+
+
+
+
+
+===== Seite page-04 =====
+
+Seite 3
+
+Eine der wichtigsten Ableitungsregeln für die Informatik ist die Resolu-
+tionsregel:
+
+(Ay V...VAm VB) A (ABV C,V...V Cp)
+H(A, V...AmVCLV...V Cp)
+
+Für nur ein A und ein C lautet diese Regel
+
+(AV B) A(-BVC)+ (AVC)
+
+Das ist äquivalent zu
+(AV B)A(B=>C)F (AVC)
+
+Aufgabe 3: Priifen Sie mit einer Wahrheitstabelle, dass die semantisch
+
+Folgerung
+(AV B)A(B=>C)F (AVC)
+gilt. Können dies auch mit den Rechengesetzen der Aussagenlogik nach-
+weisen?
+A Bc |AvB BC (AvVB)ALBRSC Aveo
+A A A A A A A
+A AO A o fe) A
+A oO A A A A A
+ı @ 8 A A A A
+oO A A A A A A
+u @ 4 Oo A >) A
+= ar
+=
+
+Wir Ldumen t.B einen Wie iS pyucs beweis machen:
+
+WENAUR = (AVBI)NCRBSC)AACAVC)
+
+CAVR)N NIBVC\ATANNC
+
+IAA CAVBIAN ACA (ABVcC)
+
+(ANA VOAAA BY) A (ACMAB)V GC AQ)
+=F ZZ.
+
+AANSAACHAS .
+
+NA AACA BANG
+ee
+= =F
+
+Ih wh
+
+N
+
+I
+
+
+
+
+
+===== Seite page-05 =====
+
+HSLU ten Seite
+
+Eine aussagenlogische Wissensbasis WB können wir immer in konjunkti-
+ver Normalform (KNF) schreiben. Ein aussagenlogischer Term WB ist
+in KNF, wenn:
+
+o WB eine UND Verbindung von Klauseln K; ist
+WB = Ki A Ko...A Km
+o eine Klausel K eine ODER Verbindung von Literalen L; ist
+K=LVIV...vVIl.
+
+o ein Literal L schliesslich eine aussagenlogische Variable oder eine Ne-
+gation von einer aussagenlogischen Variable ist.
+
+Die Resolutionsregel macht also aus zwei Klauseln eine neue Klausel, in
+der das Literal B nicht mehr vorkommt.
+
+Aufgabe 4: Formen Sie mit den Rechengesetzen den aussagenlogischen
+Term
+
+(AVB)>(CAD)
+in KNF um.
+
+(AvB)— (CAD)
+ACAVB) Vv CCAD)
+
+AAANB)v COND)
+a
+
+= (OAARB)IYVC)A COVAARB) VD)
+
+ll
+
+I
+
+I
+
+COAVCEY A OBYC)) n COAVDIAGBVO))
+(RAYVCYA CABVE)VA OAVOYNAOBVDY
+
+|
+
+st die KNEE wat I Vrauselu.
+
+
+
+
+
+===== Seite page-06 =====
+
+HSLU ten Seite 5
+
+Resolutionskalkül: Um zu zeigen, dass Q aus einer Wissensbasis WB
+abgeleitet werden kann, müssen wir aus den Klauseln von WB A-Q in
+KNF mit der Resolutionsregel Schritt für Schritt neue Klauseln ableiten,
+bis eine Kontradiktion F entsteht.
+
+Aufgabe 5: Beweisen Sie mit dem Resolutionskalkül, dass aus der Wis-
+sensbasis
+
+WB =(SVN)A(7AS)A(PVN)A(AN V P)
+die Aussage (SAN AP) abgeleitet werden kann.
+WRBNAQA = CSVNIAGS)ACPVNJAGNYV PJA CSVANVaAP)
+SVN) AS, PVN INVP, SvANvAP, N, P SVAP SC)
+) ze
+CSVNYROS)EN =
+
+CNVPYANE P es Die Leeve Klausel C)
+(SYihyapy)a N pP Str ist Muerfulloar \
+
+CSEV4 PIA PES
+HS ACS Fl)
+
+ll
+
+NAWN =>
+
+Fiir Beweiskalkiile sind zwei Eigenschaften wichtig. Ein Kalkiil heisst:
+
+o korrekt, wenn jede syntaktisch ableitbar Aussage Q) aus einer Wis-
+sensbasis WB auch semantisch aus WB folgt, also
+
+wenn WBFQ dann WBFQ
+
+o vollständig, wenn sich alle semantischen Folgerungen Q aus einer
+Wissensbasis WB auch syntaktisch aus WB ableiteten lassen, also
+
+wenn WBFQ dann WBFQ
+
+Der österreichische und später US-amerikanische Mathematiker und Phi-
+losoph Kurt Friedrich Gödel (1906-1978) konnte beweisen, dass die
+Prädikatenlogik vollständig und korrekt ist:
+
+Gödelscher Vollständigkeitssatz: Für die Prädikatenlogik erster
+Stufe gibt es vollständige und korrekte Beweiskalküle.
+
+Im Jahre 1965 wurde ein für die Prädikatenlogik erster Stufe angepasster
+Resolutionskalkül vorgestellt, der vollständig und korrekt ist. Das löste in
+den 70er Jahren des 20. Jahrhunderts eine regelrechte Logikeuphorie in
+der KI aus. Doch die automatischen Beweiser konnten trotz zigtausenden
+
+
+
+
+
+===== Seite page-07 =====
+
+HSLU ten Seite 6
+
+Inferenzen pro Sekunden mit menschlichen Experten, ihrer Intuition und
+ihrem Metawissen nicht konkurrieren. Ein interessanter Ansatz, der seit et-
+wa 1990 verfolgt wird, ist die Anwendung von maschinellen Lernverfahren
+zum Lernen von Heuristiken für die Steuerung der Suche von Resolutions-
+schritten, die zum Ziel führen.
+
+Ein weiteres Problem ist, dass in der Prädikatenlogik erster Stufe Beweiser
+in endlicher Zeit die Wahrheit einer Aussage feststellen. Ist die Aussage
+aber nicht allgemeingültig, so kann es sein, dass der Beweiser nicht hält
+und in einer Endlosschlaufe läuft. Beweiser der Prädikatenlogik erster Stu-
+fe nennt man daher habentscheidbar. Beweiser der Aussagenlogik sind
+hingegen entscheidbar. Sie stoppen immer nach endlicher Zeit, wie die
+Methode mit den Wahrheitstabellen zeigt. Offenbar ist die Prädikatenlogik
+mit den Quantoren bereits eine etwas zu mächtige Sprache.
+
+Die Prädikatenlogik erster Stufe kann nur über Variablen quantifizieren. In
+der Prädikatenlogik zweiter Stufe ist auch das Quantifizieren über Terme
+der Prädikatenlogik erster Stufe erlaubt, also zum Beispiel über eine Menge
+von Prädikaten. Kurt Gödel konnte beweisen, dass die Prädikatenlogik ab
+zweiter Stufe nicht mehr vollständig ist.
+
+Gödelscher Unvollständigkeitssatz: Für die Prädikatenlogik zwei-
+ter Stufe gibt es wahre Aussagen, die kein Beweiskalkül ableiten kann.
+
+
+
+
+
+
+===== Seite page-08 =====
+
+HSLU ten Seite 7
+
+Frage 2: Wie werden Beweiser programmiert?
+
+Im Vergleich zu klassischen Programmiersprachen wie C, Java oder Py-
+thon bietet die Logik die Möglichkeit, Zusammenhänge elegant, kompakt
+und deklarativ zu beschreiben. Bei automatischen Beweisern ist das in der
+Wissensbasis gespeicherte Wissen und der Beweiskalkül streng getrennt.
+
+Weil man jedoch Algorithmen implementieren, die zwangsläufig auch pro-
+zedurale Komponenten haben, so genügt eine rein deklarative Beschreibung
+oft nicht. Robert Kowalski, einer der Pioniere in der Logikprogrammierung,
+hat dies mit der Formel
+
+Algorithm = Logic + Control
+
+auf den Punkt gebracht. Mit der Sprache PROLOG hat sich diese Idee
+durchgesetzt. Vor allem in der KI und in der Computerlinguistik wurde
+PROLOG in vielen Projekten eingesetzt.
+
+Hier soll an einem berühmten Rätsel aus der Gruppe der Logicals die
+Funktionsweise von PROLOG aufgezeigt werden.
+
+Aufgabe 1: In fünf Häusern unterschiedlicher Farbe wohnen Menschen
+unterschiedlicher Nationalität. Jeder Bewohner besitzt ein anderes Haus-
+tier, mag ein anderes Getränk und raucht eine andere Sorte Zigaretten.
+Folgende Informationen sind gegeben:
+
+Der Brite lebt im roten Haus.
+
+Der Schwede hält einen Hund.
+
+Der Däne trinkt gern Tee.
+
+Das grüne Haus steht links vom weissen Haus.
+
+Der Besitzer des grünen Hauses trinkt Kaffee.
+
+Die Person, die Pall Mall raucht, hält einen Vogel.
+Der Mann, der im mittleren Haus wohnt, trinkt Milch.
+
+Der Besitzer des gelben Hauses raucht Dunhill.
+
+on pm DD Mm
+
+Der Norweger wohnt im 1. Haus.
+
+10. Der Marlboro-Raucher wohnt neben dem, der eine Katze hält.
+
+
+
+
+
+===== Seite page-09 =====
+
+HSLU ten Seite 8
+
+11. Der Mann, der ein Pferd hält, wohnt neben dem, der Dunhill raucht.
+12. Der Winfield-Raucher trinkt gern Bier.
+
+13. Der Norweger wohnt neben dem blauen Haus.
+
+14. Der Deutsche raucht Rothmans.
+
+15. Der Marlboro-Raucher hat einen Nachbarn, der Wasser trinkt.
+
+Wem gehört der Fisch?
+
+Schreiben Sie ein PROLOG Programm, das dieses Rätsel löst.
+
+https: //swish.swi-prolog.org/ (online Prolog Interpreter)
+
+links(A,B,S) :- S = [A,B,-,-,-); S= [,A,B,-,]); S= L,-,A,B,.]; S = L,-,-,A,B].
+neben(A,B,S) :- links(A,B,S); links(B,A,S).
+mittleres(M,S) :- S = [_,-,M,-,-].
+erstes(E,S) :- S = [E,-,-.,-,-].
+lösung :- S = [.,.,-.,-,-],
+member ([rot,brite,.,-,-], S$),
+member ([.,schwede,.,.,hund], 5),
+member ([.,daene,tee,-,-], 5),
+links([gruen,.,.,-,-], [weiss,.,.-,-,), S),
+member ([gruen,-, kaffee,_,-), 5),
+member ([-,-,-,pallmall,vogel], 5),
+mittleres([_,-‚milch,-,-], 3),
+member ([gelb,-,-,dunhill,-), 3),
+erstes([_,norweger,_,-,-], 5),
+neben([_,-,-,marlboro,_], [-,-,-,.,katze], S),
+neben([.,-,-,-,pferd], [_,-,-,dunhill,], S),
+member ([-,-,bier ‚winfield,.], 5),
+neben([_,norweger,.,.,-], [blau,.,-,-,-]), S),
+member ([{_,deutsche,.,rothmans,.], S),
+neben([.,.,-,marlboro,.], [.,-,wasser,.,-], 5),
+member([.,N,.,.,fisch], S),
+write(S), nl,
+write('Der '), write(N),
+
+write(' hat einen Fisch als Haustier.'), nl.
+
+
+
+
+
+===== Seite page-10 =====
+
+HSLU ten Seite 9
+
+Aufgabe 2 (optional): In einem Einstellungstest bekommen die Bewerber
+die Aufgabe, acht Kästchen jeweils entweder mit einem Kreuz oder mit
+einem Kreis zu füllen. Keines der Felder darf frei bleiben. Um die Aufgabe
+zu lösen, bekommen sie einen Zettel mit folgenden Hinweisen:
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+
+. Wenn sich im vierten, fünften und sechsten Kästchen insgesamt mehr
+
+als ein Kreuz befindet, sind Sie durchgefallen.
+
+. Wenn im dritten, fünften und siebten Kästchen ein Kreuz ist, sind Sie
+
+durchgefallen.
+
+. Wenn Sie in das erste Kästchen einen Kreis, in das zweite Kästchen
+
+ein Kreuz und in das fünfte Kästchen wieder einen Kreis gezeichnet
+haben, sind Sie durchgefallen.
+
+. Wenn Sie weder in das zweite, noch in das fünfte, noch in das achte
+
+Kästchen ein Kreuz gezeichnet haben, sind Sie durchgefallen.
+
+. Wenn sich im vierten, fünften und siebten Kästchen je ein Kreis be-
+
+findet, sind Sie durchgefallen.
+
+. Wenn Sie sowohl in das zweite als auch in das vierte Kästchen einen
+
+Kreis gezeichnet haben, sind Sie durchgefallen.
+
+. Wenn mehr als fünf Felder mit einem Kreuz gefüllt wurden, sind Sie
+
+durchgefallen.
+
+. Wenn sich im vierten und im sechsten Kästchen je ein Kreis befindet,
+
+im siebten aber ein Kreuz, sind Sie durchgefallen.
+
+. Wenn das dritte und das siebte Kästchen unterschiedlich gefüllt sind,
+
+sind Sie durchgefallen.
+
+Wenn sich weder im ersten noch im sechsten noch im achten Kästchen
+ein Kreuz befindet, sind Sie durchgefallen.
+
+Wenn sich weder im dritten, noch im vierten, noch im sechsten Kästchen
+ein Kreis befindet, sind Sie durchgefallen.
+
+Wenn sowohl im ersten als auch im fünften als auch im sechsten
+Kästchen je ein Kreis gezeichnet ist, sind Sie durchgefallen.
+
+Wenn sich im vierten, sechsten und achten Kästchen insgesamt mehr
+als ein Kreis befindet, sind Sie durchgefallen.
+
+Wenn Sie sowohl in das dritte als auch in das siebte Kästchen einen
+Kreis gezeichnet haben, sind Sie durchgefallen.
+
+
+
+
+
+===== Seite page-11 =====
+
+HSLU en Seite 10
+
+15. Wenn mehr als fünf Felder mit einem Kreis gefüllt wurden, sind Sie
+durchgefallen.
+
+16. Wenn sich im zweiten und im vierten Kästchen je ein Kreuz befindet,
+sind Sie durchgefallen.
+
+Finden Sie mit einem PROLOG Programm heraus, wie die Felder aus-
+gefüllt werden müssen, um den Test zu bestehen!
+
+
+
+
+
+===== Seite page-12 =====
+
+H S LU ee Seite 11
+
+Aufgabe 3 (optional): An der Kasse eines Shoppingcenters stehen fünf
+Freunde (Dana, Ingo, Jessica, Sören, Valerie) hintereinander an. Sie sind
+alle unterschiedlich alt (26, 27, 30, 33 und 35 Jahre) und möchten alle unter-
+schiedliche Oberteile (Hemd, Poloshirt, Pullover, Sweatshirt und T-Shirt)
+für sich selbst kaufen. Die Oberteile haben alle unterschiedliche Farben
+(blau, gelb, grün, rot und schwarz) und unterschiedliche Grössen (XS, S,
+M, L und XL).
+
+Finden Sie mit einem PROLOG Programm heraus, wer wo steht, wie alt
+ist und welches Oberteil in welcher Farbe und Grösse kaufen möchte. Dabei
+sind die Positionen in der Schlange von der Kasse aus zu sehen, d.h. „vorn“
+bzw. „die erste Person“ ist direkt an der Kasse. Es stehen keine weiteren
+Personen in der Schlange und die Kassierer(innen) sind ausser Acht zu
+lassen. Ausblenden
+
+1. Dana, die ein Oberteil in Grösse XL erwerben möchte, steht weiter
+vorn als die Person, die ein schwarzes Oberteil kaufen will.
+
+2. Jessica steht direkt vor der Person, die ein Poloshirt erwerben möchte.
+
+ow
+
+. Die zweite Person in der Schlange möchte ein gelbes Oberteil kaufen.
+4. Das T-Shirt ist nicht rot.
+
+. Sören möchte ein Sweatshirt kaufen. Die Person, die direkt vor ihm
+steht, ist älter als die Person, die direkt hinter ihm steht.
+
+or
+
+. Ingo benötigt ein Oberteil in Grösse L.
+. Die letzte Person in der Schlange ist 30 Jahre alt.
+
+. Die älteste Person will das Oberteil in der kleinsten Grösse kaufen.
+
+Co aon am
+
+. Die Person, die direkt hinter Valerie steht, will ein rotes Oberteil kau-
+fen, das grösser als Grösse $ ist.
+
+10. Die jüngste Person möchte ein gelbes Oberteil erwerben.
+11. Jessica will ein Hemd kaufen.
+
+12. Die dritte Person in der Schlange möchte ein Oberteil in Grösse M
+erwerben.
+
+13. Das Poloshirt ist rot, gelb oder grün.
+
+
+

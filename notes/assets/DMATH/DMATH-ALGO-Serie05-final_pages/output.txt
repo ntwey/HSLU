@@ -1,0 +1,537 @@
+
+
+===== Seite page-01 =====
+
+HSL Hochschule
+Luzern Dr. Reto Berger
+
+DMATH-ALGO
+
+Analyse von Algorithmen
+
+Herbstsemester 24
+
+Serie 5
+
+Lernziele
+
+o Sie können bei einfachen Algorithmen die Anzahl Rechnungs-
+schritte im Worst-Case bestimmen.
+
+o Sie können das Asymptotische Wachstum einer Funktion bestim-
+men und verstehen die Big-O, Big-Q und Big-O Notationen.
+
+o Sie kennen die wichtigsten Komplexitätsklassen.
+
+Das Bedürfnis nach Geschwindigkeit hat in den letzten fünfzig Jahren
+einen Grossteil des Fortschritts in der Informatik vorangetrieben. Es wur-
+den schnellere Wege entdeckt, um wichtige Probleme zu lösen: die Entwick-
+lung von Datenstrukturen, die eine scheinbar sofortige Suche von Milliar-
+den von Webseiten oder Hunderten von Millionen von Nutzern auf einer
+Social-Networking-Site unterstützen, oder die Entdeckung neuer, schneller-
+er Algorithmen, die praktische Probleme lösen - wie das Finden kürzerer
+Wege für Lieferfahrer oder das Verschlüsseln von Paketen, die über das
+Internet gesendet werden sollen. In dieser Serie lernen wir die asymptoti-
+sche Analyse kennen, mit der wir die Geschwindigkeit unterschiedlicher
+Algorithmen für dasselbe Problem vergleichen können.
+
+
+
+
+
+===== Seite page-02 =====
+
+HSLU ite" Seite 1
+
+Frage 1: Warum werden Algorithmen analysiert?
+
+Die Grundidee der Analyse besteht darin, die Wachstumsrate der Laufzeit
+oder des Speicherbedarfs eines Algorithmus zu betrachten - wie viel langsa-
+mer wird zum Beispiel der Algorithmus, wenn wir die Grösse der Eingabe
+verzehnfachen? Um die relative Leistung von Algorithmen zu analysieren,
+wird das langfristige Verhalten für grosse Eingaben untersucht. Irgendwel-
+che Spezialfälle mit kleinen Eingaben, bei denen ein Algorithmus besonders
+gut abschneidet, sind irrelevant.
+
+Aufgabe 1: Gegeben sei eine Funktion f, die eine Liste mit n Komponen-
+ten als Input erhält und eine bestimmte Komponente der Liste als Output
+zurückgibt. Wir betrachten drei Algorithmen, die diese Funktion f imple-
+mentieren:
+
+o Der Algorithmus A braucht für die Berechnung n log,(n) Rechnungs-
+schritte.
+
+o Der Algorithmus B braucht für die Berechnung n? Rechnungsschritte.
+
+o Der Algorithmus C braucht für die Berechnung n! = n-(n—1)-...-2-1
+Rechnungsschritte. ef. Si= te
+
+Die Algorithmen sind auf einem Rechner implementiert, der pro Sekunde
+1 000 000 000 Rechnungsschritte ausführen kann. Bestimmen Sie für die drei
+Algorithmen, wie viele Komponenten die Eingabeliste maximal haben darf,
+damit der Output innerhalb einer Minute berechnet werden kann.
+
+(aor twas A.
+4
+A? hoa cu = 60: AO
+Kur A= AS4¥4FO4SO
+
+Maori twas RB: Maortuwus Cc:
+n> = 60:0” ul = 60:10”
+or u = 247348 jur un =4%
+
+ALO
+
+
+
+
+
+===== Seite page-03 =====
+
+Seite 2
+
+Frage 2: Was ist ein Worst-Case Analyse?
+
+In der Serie 1 haben wir einen Algorithmus kennengelernt, der für jede
+natürliche Zahl x ihre Binärdarstellung (x)a berechnet:
+
+def decToBin(x):
+
+oa ye"
+& temp = x
+@ while temp != 0:
+if temp % 2 == 0: ©
+x = OF
+else: ©
+
+temp = temp // 2 ©
+@ return y
+
+Aufgabe 2: Bestimmen Sie die totale Anzahl Rechnungsschritte (Zuwei-
+sungsoperationen, Vergleichsoperationen und Rechenoperationen) abhängig
+
+von der Eingabe 2.
+
+Wa VRR UA ABMS LUA AMA are es t
+
+x | HH wuadır mong un
+A Jl. -- - 3 eR8 i A
+aang 2,
+3 BE L. J bedeutet
+2 =4 = alov uuden ) ALSO t.8,
+= %
+G 3 L2 87h. 1s Lu
+= | ere LAS.ARo.. | = AS
+2°=6
+a AeA = Lhoq Curl+A
+
+I
+
+K kahwunsdnvike 3 + CL Roa, Cu) +A: ta
+
+G+ $CL tog Coys + A)
+
+I
+
+
+
+
+
+
+===== Seite page-04 =====
+
+HSLU tien Seite 3
+
+Bei Algorithmus für die Funktion decToBin() konnten wir für jedes x
+eindeutig angeben, wie viele Rechnungsschritte durchgeführt werden.
+
+Wenn aber ein Algorithmus als Input zum Beispiel eine Liste der Länge n
+verarbeitet, hängt die Anzahl Rechnungsschritte im Allgemeinen auch von
+den Werten ab, die in so einer Liste gespeichert sind.
+
+Definition 1: Bei einer Worst-Case- Analyse wird in Abhängigkeit von
+der Grösse n des Inputs die maximale Anzahl Rechnungsschritte angege-
+ben, die zur Berechnung nötig sein können.
+
+Aufgabe 3: Bestimmen Sie für den folgenden linearen Suchalgorithmus
+die totale Anzahl Rechnungsschritte für eine Liste der Länge n, die im
+Worst-Case nötig sind:
+
+def linearSearch(Liste,Element) :
+for i in range(len(Liste)): ©
+N if Liste[i] == Element: return True
+@) return False
+
+Best-Case: Ar = 8
+Wover—Case. wi CAx*A)V +A = LAURA
+
+inch VE Ta OCw) , WAR:
+
+ZU Sf lLuru = Su ur IA
+
+Zu HA isk iu LEN | Werk:
+
+Lur\ > Luteo = U: \ı\ Zur A2O
+
+0836. Worst-Case con QueavSeaich
+St a Ocu)
+
+
+
+
+
+===== Seite page-05 =====
+
+Seite 4
+
+Bereits die Worst-Case-Analyse eines einfachen Sortieralgorithmus kann
+anspruchsvoll sein:
+
+Aufgabe 4: Bestimmen Sie für den folgenden Sortieralgorithmus die totale
+Anzahl Rechnungsschritte für eine Liste der Länge n, die im Worst-Case
+
+nötig sind. Was ist die kleinste Anzahl Rechnungsschritte (Best-Case), die
+für alle Listen der Länge n nötig sind?
+
+def selectionSort (Liste):
+@ | for i in range(len(Liste)):
+& minIndex = i
+for j in range(iti,len(Liste)): @
+if Liste[j] <¢.Liste[minIndex]: minIndex &)
+# swap Liste[i] and Liste[minIndex]
+© temp = Liste[il]
+
+e
+
+= = - j- Schtei
+
+@ Liste[i] = Liste[minIndex]  ¢7 © u an ud ; Arme
+_ on vu, Fe
+
+ot Eistelmiuiniex] = tum un, Cal yr SALA Re
+
+n wot Laud A Wal 3-5
+
+MHA oO mak „sh
+
+Wost-Cose : vn 5 + Cu-A):%3
+a Clery So
++ (Cu-3) 3
+
+x
+(wed) eOMH2) 4-4 A =S ‘ ,
+A + U + russ + A:
+
+WM + W]e wW=23J5
+CU-AV N= 2S
+
+|
+
+Sur SLOW t+ Curd)p 4 Ad
+
+cu u % ncu-A)
+Byes u sit
+= BU r=" ce My Se A ce
+ncu-A) A
+feat -Case : Su+ho— DT Ss u +tu
+
+selechou Sort ist \u OCW) .
+
+
+
+
+
+===== Seite page-06 =====
+
+Seite 5
+
+Aufgabe 5: Bestimmen Sie für den folgenden Sortieralgorithmus die totale
+Anzahl Rechnungsschritte für eine Liste der Länge n, die im Worst-Case
+
+nötig sind. Was ist die kleinste Anzahl Rechnungsschritte (Best-Case), die
+für alle Listen der Länge n nötig sind?
+
+def insertionSort (Liste):
+
+& for i in range(1,len(Liste)):
+®& j= i
+aA & while j > O and Liste[j] < Liste[j-1]:
+temp = Liste[j] ® =‘ A wrod |- Sct fa
+Liste[j] = Liste[j-1] @ L=L mol sun
+Liste[j-1] = temp © L= 3S Dina SEE
+U j = j-1 ®
+
+u nog O® um wer wol Schü
+
+WOYST- Case : (UA 4 FA 6ER 68 6+ + CUu-A):6
+
+|
+
+Uu Curd) + 6: (Ar LE 84-4 Cu-A))
+
+4 Comet) 4 £- “oS
+Wu] + + Sucu—-i)\
+
+Sure nu-4
+
+)
+
+|)
+
+Best- Case : Cua A S Kurt
+
+Wost- Case vou Wwsewmoudork (87 u ACK)
+
+Boant—-Case vom ıuserkisu Sort oh vu OCu)
+
+
+
+
+
+===== Seite page-07 =====
+
+HSLU tire Seite 6
+
+Aufgabe 6: Bestimmen Sie fiir den folgenden Sortieralgorithmus die totale
+Anzahl Rechnungsschritte für eine Liste der Linge n, die im Worst-Case
+nötig sind. Was ist die kleinste Anzahl Rechnungsschritte (Best-Case), die
+für alle Listen der Länge n nötig sind?
+
+def bubbleSort (Liste):
+
+aA) | for i in range(len(Liste)):
+@jfor j in range(len(Liste)-1): ;_, (uy wal Schleife
+@®| if Liste[j] > Listeljt1]: = Cu-s\wat |-Schteite
+temp = Liste[j] BD La (u-A)wmor jSchleite
+Liste[j] = Listeljt11]®& :
+& | Liste [j+1] = temp & Lec (us) Waal schleik
+
+WOK Cu-A) nal
+
+Worst-Case. WA + nn luA\:5
+
+ur Su Cu-A\
+Sure ibn
+
+|
+
+Best-Cası: WA weimn-A)Z
+= ur zu Cu)
+
+= Zw -u
+
+VOulbWwtLedort \ST 1K OU),
+
+
+
+
+
+===== Seite page-08 =====
+
+Seite 7
+
+Aufgabe 7: Bestimmen Sie für den folgenden Suchalgorithmus die tota-
+le Anzahl Rechnungsschritte für eine geordnete Liste der Länge n, die
+
+im Worst-Case nötig sind. Was ist die kleinste Anzahl Rechnungsschritte
+(Best-Case), die für alle Listen der Länge n nötig sind?
+
+def binarySearch(Liste,Element) :
+@ left =0
+
+@® ® right = len(Liste)-1
+
+@ while left <= right: oa on
+
+middle = (left + right)//2 ® ©
+
+if Liste[middle] == Element: @~
+return True &
+
+elif Liste[middle] > Element: &”
+right = middle - 1 ® ®&
+
+v else: anrwmuekey oder
+ty
+&
+
+left = middle + 1 ® ®
+return False
+
+Wost-Case: (ELemen® it wacht im chew Liste)
+
+KE OMAR WAL Ce race Harzie wucht Kemer
+18T OWS hin Aue Mahle , mneuman
+
+WW Im worst-case deu akse-Tall.
+
+-pronevrn>|s
+
+ifs me
+
+Utd = Lhoa Cult
+
+Se HMA: +
+S + (Log cords ay +
+42. H-Lloy, cur |
+
+Il
+
+I
+
+Sest-Case: 1+t=%
+
+Warst -Case vow loiuavySeavcu vst in Olkoscu),
+
+
+
+
+
+===== Seite page-09 =====
+
+HSLU tien Seite 8
+
+Frage 3: Was ist eine asymptotische Analyse?
+
+Das Zählen der genauen Anzahl der Rechnungsschritte eines Algorithmus
+ist oft sehr schwierig. Zudem stellt sich die Frage, ob die exakte Angabe
+der Rechnungsschritte überhaupt sinnvoll ist. Weil die Rechner eine gewal-
+tige Rechenpower haben, dürfte es keinen Unterschied ausmachen, ob ein
+Algorithmus im Wort-Case n? + 3n +3 oder n?+5x+ 7 Rechnungsschritte
+benötigt. Vielmehr wäre es sinnvoll Algorithmen in Klassen unterschiedli-
+che Rechenzeitkomplezität oder Speicherplatzkomplezität einzutei-
+len.
+
+Algorithmen, die zu unterschiedlichen Komplexitätsklassen gehören, sollen
+sich wesentlich voneinander unterscheiden.
+
+Definition 2: Seien f und g zwei Funktionen, welche die Rechnungsschritte
+zweier Algorithmen angeben. Wir sagen, dass die Funktion f
+
+o nicht stärker wächst als die Funktion g, wenn für alle Input-Werte
+x grösser als ein Startwert xp gilt, dass
+
+f(x) < C- g(x) für eine feste Konstante C.
+
+Kurz bezeichnen wir dies mit f(x) ist in O(g(z)) (Big-O Notation).
+
+o nicht langsamer wächst als die Funktion g, wenn fiir alle Input-
+Werte x grösser als ein Startwert xo gilt, dass
+
+f(x) > c- g(a) für eine feste Konstante c.
+
+Kurz bezeichnen wir dies mit f(x) ist in Q(g(x)) (Big-Q Notation).
+
+o asymptotisch gleich wächst wie die Funktion g, wenn
+Kurz bezeichnen wir dies mit f(x) ist in @(g(x)) (Big-O Notation).
+Um zu zeigen, dass eine Funktion eine dieser Eigenschaften hat, müssen
+
+wir Zeugen zo und C oder xp und c angeben und mit einer Rechnung
+begründen, dass die Ungleichung stimmt.
+
+
+
+
+
+===== Seite page-10 =====
+
+HSLU tte
+
+Seite 9
+
+Aufgabe 8: Begriinden Sie, dass
+a) f(x) = 42° + 152? — 102? —8 in O(a°) ist.
+6
+Urt o—
+— 6 i.
+= AD Tun xoN.
+
+b) f(x) = 42° + 152? — 1027? — 8 in Q(z?) ist.
+
+2 4x +tSy3 - 10x78
+
+y «kee isxs- hox>— &x°
+
+= A-x% ur x 2A,
+
+=5a2?—2r+8 in (2?) ist.
+
+S SKt-Or+& x? = ABx™ Lay x2A.
+
+ION 7 og tg ee = Bt un x 2A,
+
+d) f(a) = 5rlog,(32”) +32? in O(a? log(z)) ist.
+Sg KAoazl%N - Log ,6<*)) + 3x°
+Sx 204, C3) + SK. X AOI,CK) + Er.
+SX LO Ox) + SKTLoa,Cn) + SX?* X23
+SX ROCK) + SX ROQs Cx) + 3x? Log, x)
+AS- x* Loa Cx)
+8x + 2? logi9(5”)) log10 (102) in O(x? log(x)) ist.
+= (8x +x x hog. CS) ) Aoa un S49 X)
+(8x x” A): L0Q Cho x)
+
+(SAH x*)- ROY, Cx?) aw x 2AO
+(Ext): 2: 209 96%)
+Cexs4 x %)- 2 Loa ytx)
+
+AZ: x A904, 66 x
+
+)
+
+INN
+
+I
+
+e) f(x) =
+
+Nina.
+
+|
+
+
+
+
+
+===== Seite page-11 =====
+
+HSLU tien Seite 10
+
+Frage 4: Welche Komplexitätsklassen sind wichtig?
+
+Mit der Big-O Notation können wir die wichtigsten Komplexitätsklassen
+für die asymptotische Analyse von Algorithmen beschreiben. Sei n die
+Grösse des Inputs. Wenn die Anzahl der Rechnungsschritte f(n) in den
+Komplexitätsklassen
+
+O(1) < Ollog(n)) C O(n) C O(nlog(n)) C O(n?) ©... C O(n*) c< ...
+
+ist, hat der Algorithmus ein polynomielles Wachstum. Probleme, die
+mit einem solchen Algorithmus gelöst werden können, heissen real lösbar.
+Wenn die Anzahl der Rechnungsschritte f(n) in den Komplexitätsklassen
+
+O2") C O(3") C O(4") C... C O(a") c...
+
+ist, hat der Algorithmus ein exponentielles Wachstum. Probleme, die
+nur mit einem solchen Algorithmus gelöst werden können, heissen real
+unlösbar.
+
+Beispiele:
+
+o Ein Speicherzugriff ist in O(1).
+o Die binäre Suche in einer Liste mit n Komponenten ist in O(log(n)).
+o Die lineare Suche in einer Liste mit n Komponenten ist in O(n).
+
+o Das Sortieren einer Liste mit n Komponenten nach dem Mergesort
+Verfahren von John von Neumann ist in O(nlog(n)).
+
+o Das Sortieren einer Liste mit n Komponenten mit den meisten klas-
+sischen Verfahren ist in ©(n?).
+
+o Das Multiplizieren zweier n x n Matrizen in der Linearen Algebra mit
+naivem Vorgehen ist in O(n?).
+
+o Das SAT Problem für eine Aussage mit n aussagenlogischen Variablen
+mit naivem Vorgehen ist in ©(2”).
+
+
+

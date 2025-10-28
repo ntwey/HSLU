@@ -1,0 +1,847 @@
+
+
+===== Seite page-01 =====
+
+HSL Hochschule
+Luzern Dr. Reto Berger
+
+DMATH-ALGO
+
+Aussagenlogik
+
+Herbstsemester 24
+
+Serie 2
+
+Lernziele
+
+o Sie können mit Hilfe von Wahrheitstabellen aussagenlogische
+Terme Schritt für Schritt analysieren.
+
+o Sie können mit Hilfe der Rechenregeln aussagenlogische Terme
+in äquivalente Terme vereinfachen.
+
+o Sie verstehen die Begriffe allgemeingültig, erfüllbar, unerfüllbar
+und kennen das SAT Problem.
+
+In dieser Serie wird die formalen Logik vorgestellt, die Grundlage der ge-
+samten Informatik. Wir brauchen Logik, wenn wir die Bedingung einer
+if-Anweisung schreiben oder wenn wir eine Schaltung entwerfen, um zwei
+32-Bit-Ganzzahlen zu addieren oder wenn wir ein Programm entwerfen, um
+einen Grossmeister im Schach zu schlagen. Jede Bedingung, die wir in eine
+Schleife schreiben, ist eine logische Aussage. Wenn wir uns hinsetzen, um
+eine binäre Suche in Python zu schreiben, stellen wir durch die Verwendung
+logischer Überlegungen sicher, dass unser Code bei jeder Eingabe richtig
+funktioniert. Wenn wir eine Suchmaschine verwenden, um nach Websei-
+ten zu suchen, machen wir logische Überlegungen zu speziellen Anfragen
+oder das Lösen eines Sudoku-Rätsels entspricht dem Verfolgen logischer
+Zusammenhänge.
+
+
+
+
+
+===== Seite page-02 =====
+
+HS LU ae Seite 1
+
+Frage 1: Was ist eine Aussage?
+
+Wir kennen boolean Werte und kénnen mit ihnen rechnen. Dieser ele-
+mentare Datentyp kommt aber nicht nur als Variable vor, er dient auch
+als Wert fiir sinnvoll interpretierbare Textkonstrukte einer gesprochenen
+Sprache.
+
+Definition 1: Eine Aussage ist ein Satz, der entweder wahr oder falsch
+ist. Mit 1 codieren wir den Wert wahr und mit 0 den Wert falsch.
+
+Sind folgende Sätze in der deutschen Sprache Aussagen?
+
+o «Die Summe von Zwei und Drei ist Fiinf.>
+
+ya, wit Wakruertswert A
+o «Vierundvierzig ist eine Primzahl.>
+ya, wit Wakruertswert oO
+o «Donald Ervin Knuth ist ein US-amerikanischer Informatiker.>
+ya ) ut Wakrrvaets wert A
+o «Wie alt wurde der Mathematik Leonhard Euler?>
+nein, AAS It enue Tyage
+o «<Jede gerade Zahl grösser als Zwei ist die Summe zweier Primzahlen.>
+ya „wit Wakrnerts wert unbekauur
+o «Sei freundlicher zu deinem Lehrer!» rn, BES BSS eo 3
+neu, Aas ıst 2K ‘Be fel
+
+Eine Aussage ist atomar, wenn wir sie nicht in zwei kiirzere Aussagen
+aufteilen können:
+
+o «Das Haus ist alt und steht direkt am See.» Wu cht otro Ura :
+« Das Haus ist alt»
+« Das Haus stellt Awvekt am See”
+
+o «Das Haus steht zwischen Cham und Zug.> OXourcay
+
+
+
+
+
+===== Seite page-03 =====
+
+HSLU tien Seite 2
+
+Frage 2: Wie sind Aussagen aufgebaut?
+
+Atomare Aussagen können wir zu neuen Aussagen verbinden. Mit grossen
+lateinischen Buchstaben A, B,C,..., die sogenannten aussagenlogischen
+Variablen, bezeichnen wir atomare Aussagen und bilden daraus zusam-
+mengesetzte Aussagen:
+
+Betrachten wir die folgenden vier atomaren Aussagen:
+
+A: «Pierre ist Kanadier.»
+B: «Pierre ist Schweizer.»
+C: «Pierre ist in Bern geboren.»
+
+D: «Pierre ist in Quebec geboren.»
+Häufige aussagenlogische Verbindungen sind dann:
+
+o Die Negation 7A (nicht):
+
+«Pierre ist nicht Kanadier.»
+
+Der Wahrheitswert von “A hängt von A ab:
+A| nA
+1 oO
+0 A
+o Die Konjunktion BAC (und):
+
+«Pierre ist Schweizer und in Bern geboren.»
+
+Der Wahrheitswert von BA C hängt von B und C ab:
+
+Cc | BAC
+
+-
+
+B
+1
+1
+0
+0
+
+oe ©
+OOOs
+
+
+
+
+
+===== Seite page-04 =====
+
+HSLU tte Seite 3
+
+o Die Disjunktion AV B (oder):
+
+«Pierre ist Kanadier oder Schweizer.»
+
+Der Wahrheitswert von A V B hängt von A und B ab:
+
+A B || AVB
+1 1
+1 0
+0 1
+0 0
+
+o Die Kontravalenz C @ D (entweder oder):
+
+«Pierre ist entweder in Bern oder in Quebec geboren.>
+
+Der Wahrheitswert von C @ D hängt von C und D ab:
+
+C D| C®D
+
+| 3
+
+o Die Implikation D => A (wenn dann):
+
+or CO =
+
+1
+0
+0
+
+«Wenn Pierre in Quebec geboren ist, dann ist er Kanadier.>
+
+Der Wahrheitswert von D = A hängt von D und A ab:
+
+D A| D=>A
+
+1 1 A
+— Key
+
+He
+
+Die linke Aussage der Implikation heisst Prämisse (Annahme).
+
+Die rechte Aussage der Implikation heisst Konklusion (Folgerung).
+
+
+
+
+
+===== Seite page-05 =====
+
+HSLU tien Seite 4
+
+o Die Äquivalenz D A (genau dann, wenn):
+
+«Pierre ist genau dann in Quebec geboren, wenn er Kanadier ist.>
+
+Der Wahrheitswert von D A hängt von D und A ab:
+
+D A| Dea
+
+1 1 A
+Pil &
+
+0 1\ lo
+
+0 0 A
+
+Definition 2: Was ein aussagenlogischer Term ist, können wir in drei
+Schritten definieren:
+
+o Eine atomare Aussagen ist ein aussagenlogischer Terme.
+
+o Wenn A ein aussagenlogischer Term ist, dann ist auch "A ein aussa-
+genlogischer Term.
+
+o Wenn A und B zwei aussagenlogische Terme sind, dass sind auch
+ANB, AVB, A®B, A=> Bund A B aussagenlogische Terme.
+
+Aufgabe 1: Zeichen Sie den Syntaxbaum der folgenden aussagenlogischen
+Terme:
+
+a) ((A=> B)A(>B)) @ (>A)
+
+x»
+
+& A
+AR
+A B B
+
+&
+
+b) ((PVQ) => BR) & ((P> R)A(Q= R))
+
+oN
+eS ES
+oOo RR BEB ©
+
+Fr IN /%
+P Q P RQ R
+
+
+
+
+
+===== Seite page-06 =====
+
+HSLU tien Seite 5
+
+Frage 3: Was sind die Wahrheitswerte von Termen?
+
+Die Menge aller atomarer Aussagen in einem aussagenlogischen Term heisst
+die Signatur des Terms. Eine Belegung all dieser atomarer Aussagen mit
+Wahrheitswerten nennen wir eine Interpretation der Signatur.
+
+Definition 3: Ein aussagenlogischer Term heisst:
+
+o erfüllbar, wenn er für mindestens eine Interpretation der Signatur
+wahr ist.
+
+o allgemeingültig, wenn er für alle Interpretation der Signatur wahr
+ist (Tautologie). Wir bezeichnen so eine Aussage mit dem Buchsta-
+ben T.
+
+o unerfüllbar, wenn er für keine Interpretation der Signatur wahr ist
+(Kontradiktion). Wir bezeichnen so eine Aussage mit dem Buchsta-
+ben F’.
+
+Mit einer Wahrheitstabelle können wir Schritt für Schritt prüfen, ob
+ein Term erfüllbar, allgemeingültig oder unerfüllbar ist, in dem wir alle
+Interpretationen der Signatur auswerten:
+
+(Q > P)A-(P) Soy
+
+AR
+Für die Signatur {P,Q} gibt es vier Interpretationen: Q Pp pP
+Signatur
+P Q|Q>P -P (Q=P)A(-P)
+2(1 1 1 0 0
+ua 1 0 1 0 0
++
+>£ 0 1 0 1 0
+$3.0 0 1 1 1
+
+Der aussagenlogische Term (Q = P) A 7(P) ist also erfüllbar. Er ist nur
+fiir die Interpretation in der letzten Zeile wahr.
+
+Zwei Terme sind aussagenlogisch äquivalent, wenn sie fiir alle Inter-
+pretationen den gleichen Wahrheitswert haben. Wir schreiben 7) = 75.
+
+
+
+
+
+===== Seite page-07 =====
+
+HSLU tte Seite 6
+
+Die Wahrheitstabelle zeigt, dass (Q > P) A7>(P) = >(P V Q) gilt:
+
+P Q|Q>P AP (Q@>P)ACP) | PvQ -(PVQ)
+
+1 1 1 0 0 1 0
+1 0 1 0 0 1 0
+0 1 0 1 0 1 0
+0 O 1 1 1 0 1
+u u my
+
+Aufgabe 2: In der Softwaretechnik beschreibt eine Spezifikation, was von
+einem System geleistet werden soll. In einem technischen Dokument stehen
+zum Beispiel die folgenden Anforderungen:
+
+A,: If the file system is not locked, then new messages will be queued.
+
+Aa: If the file system is not locked, then new messages will be sent to the
+message buffer.
+
+Ag: If the file system is not locked, then the system is functioning normally,
+and conversely.
+
+Aq: If new messages are not queued, then they will be sent to the message
+buffer.
+
+As: New messages will not be sent to the message buffer.
+
+Ubersetzen Sie diese Anforderungen in fiinf aussagenlogische Terme. Ver-
+
+wenden Sie die folgenden vier atomaren Aussagen: A, r,2akL= ©
+L fiir <file system locked> N, ‚aß
+Q für «new messages are queued> Az: nh eS N
+B fiir <new messages are sent to the message buffer> Ay: A=
+N fiir <system functioning normally> As ab
+
+Die Spezifikation heisst konsistent, wenn es eine Interpretation gibt, so
+dass jede der fünf Anforderungen wahr ist. Verwenden Sie eine Wahrheits-
+tabelle um festzustellen, ob diese Spezifikation konsistent ist.
+
+Die Siquat uv ist (LA, BN§
+Co avot AB vevsclieckene Inkev pyetatloueu
+Luv diese Siauatur:
+
+
+
+
+
+===== Seite page-08 =====
+
+2Q—8 78
+
+ILA=Q ALB ALEN
+L Au Ad Az AQ Ay As AN ALA Bh Agads
+
+O0O00<
+
+OO <~
+SS dx
+8000
+
+«De
+
+xxxv<
+
+x <xx<
+
+09000
+
+000000000000
+
+OO [ir 00 cr OO
+
+ry OO @sverer ee OO
+
+seer OOOO ee
+
+O<SOXxX<O<SO<O<oO
+
+«ei ser OO er OC
+
+cx eet ce e DB5O
+
+OO OD< << < << < <
+
+L QABSN
+
+<0 x<(O
+<x 0/0
+=
+
+SS
+
+x <x</<
+
+zo ss oO ~ Oro <= Oo
+srs OO vy O00 €<€ Fs 00
+DSOOO<SS<CBHOOO
+<<<-<00000000
+
+—
+
+Dey auss agaulo sche ler un
+
+A,NA)JNAZNÄUNAL ist ey fulllay ,
+
+die Speritikamou ist akso kousisteut.
+
+
+
+
+
+===== Seite page-09 =====
+
+Seite 7
+
+Aufgabe 3: Überprüfen Sie je mit einer Wahrheitstabelle Schritt für Schritt,
+ob die folgenden Terme erfüllbar, allgemeingültig oder unerfüllbar sind.
+
+a) (AAB)A(AV-B)
+
+b) ((PVQ)=>R)=> (P= R)V(Q=> R))
+
+Aufgabe 4: Uberpriifen Sie je mit einer Wahrheitstabelle Schritt fiir Schritt,
+ob die folgenden zwei Terme äquivalent sind.
+
+a) P>(QVR) und QV(-PVR)
+
+b) P=>(QVR) und (QA-R)>P
+
+Cc D 3a)
+A RB | AAB mAvrAB cAD
+A A A oO o
+A o = A oO
+oO A 6) = oO
+o Oo oO A ©
+
+UAuey {MALL SON
+
+A i) E D
+
+E 3b)
+PAR |Pva APR PSR QR CVD BSE
+A A A A A A A A A
+AA O A © © o o A
+AO A A A A A A A
+10 O A oO lo) A A A
+O A A A A A A A A
+oO A © A o A re) A A
+oo A fo) A A A A A
+o 0 © O N A A A A
+all ae WALLA aul 4 CTautovoas e)
+
+
+
+
+
+===== Seite page-10 =====
+
+NwwOww wv =
+
+<~ O~
+
+yo Sy
+
+Of e& <=
+
+0 = <=
+
+Ss
+
+PAR Tavr PHA APVR QvB
+
+= OW
+
+< wv OQ
+
+= SS LS
+
+oxox O
+
+o<x 00
+-0000O
+
+\
+
+Ka) PS(QvR)
+
+Qv GPvR)
+
+—
+—
+—
+
+Q
+
+m
+
+| ~wwelv olxev —
+u
+L.lox000<oo
+as
+
+aL
+
+van
+
+(|< << ol<<j<<
+QL
+
+ev oe =O
+&
+
+Y <oso<oxs®d
+G|~rvraox~x 00
+al~~~ ~O9O000
+
+\
+
+4b) PSQvR)s Cam) P
+
+
+
+
+
+===== Seite page-11 =====
+
+HSLU tte Seite 8
+
+Frage 4: Wie können wir Terme vereinfachen?
+
+Das Aufstellen der Wahrheitstabelle wird umso aufwändig, je mehr atoma-
+re Aussagen die Signatur enthält.
+
+Aufgabe 5: Wie viele Zeilen hat die Wahrheitstabelle, wenn die Signatur
+einer Aussage 50 atomare Aussagen enthält?
+
+„0 = A4A2SRLAIL0o6RLH4HL62Y
+
+Um zu prüfen, ob eine Aussage erfüllbar ist, müssen wir im schlimmsten
+Fall alle Zeilen der Wahrheitstabelle ausrechnen. Bis heute kennen wir
+keinen Algorithmus, der dieses Erfüllbarkeitsproblem der Aussagenlogik
+(SAT, von englisch satisfiability) effizient lösen kann.
+
+SAT gehört zu der Komplexitätsklasse der NP Probleme, bei denen mögliche
+Lösungen schnell überprüft werden können. Um zu prüfen, ob für eine In-
+terpretation der Signatur die Aussage wahr ist oder nicht (eine Zeile der
+Wahrheitstabelle ausrechnen), ist effizient machbar.
+
+In der Forschung haben Informatikerinnen und Informatiker SAT-Solver
+entwickelt, die das SAT Problem mit sehr vielen atomaren Aussagen in
+praktikabler Zeit lösen können. Das ist aktuell ausreichend für praktische
+Anwendungen in der formalen Verifikation, der künstlichen Intelligenz und
+in verschiedenen Planungs- und Schedulingalgorithmen. Dennoch ist das
+SAT Problem das grösste ungelöste Rätsel der Informatik. Das Clay Mathe-
+matics Institute in Peterborough (USA) hat für die Lösung des Problems
+ein Preisgeld von einer Million Dollar ausgeschrieben.
+
+Bekannt ist, dass es auch für aussagenlogische Terme Rechenregeln gibt,
+mit denen wir im besten Fall den Term stark vereinfachen können.
+
+Interessanterweise reichen Rechenregeln für die Negation, die Disjunk-
+tion und die Konjunktion, weil wir in Termen die Implikationen und die
+Aquivalenzen mit nicht, und und oder ersetzen können:
+
+o A=>B=-AVB a BE m Wi,
+AA A A
+A ao] Oo o
+oA A A
+o © A A
+
+
+
+
+
+===== Seite page-12 =====
+
+HS L ae Seite 9
+
+Cc D
+o ASB=(AS>B)A(BSA) A BIA@B BHA CAD AB
+A A A A A A
+A 0 fe) A fe) ©
+oo A A o fo) >
+o 0 a A A A
+
+Für die für Negation, die Disjunktion und die Konjunktion gilt:
+
+o Doppelnegation: ®
+(A) =A A|=A 8
+A je) A
+fe) A oO
+o Idempotenz:
+
+AVA=A und AAA=A
+A | AVA A [AAA
+
+A A A | A
+Oo Oo © ce
+
+o Dominanz:
+AVT=T und AAF=F
+A T|AVT AF|AAF
+A 1 | A A a fe
+oO A A oO oO Oo
+
+o Identität:
+AVF=A und AAT=A
+AF|AVe ATIAAT
+
+Ao| A AA| 4
+Oo] o oAl o
+
+o Invers:
+AV-A=T und AA-A=F
+A TIAA AvaA A F[AA AAA
+
+TIE A IE °
+oAl A A ool A fe)
+
+o Kommutativität:
+AVB=BVA und AAB=BAA
+
+A BIAVB BVA ABIAAB BAA
+A A A A A A A A
+AO A A Ao ° fos
+oA A A oA fe) fo)
+o 0 fe] fe) oo fo) fo)
+
+
+
+
+
+
+===== Seite page-13 =====
+
+HSLU tte
+
+Seite 10
+
+o Absorption:
+AV(AAB)=A und AA(AVB)=A
+
+a Cc
+A BJAAB AVC A BIAVG AAC
+A A A A AA A A
+a9 ° a a
+oA °
+oo o
+
+°
+°
+
+Q9>2>
+
+A oO
+° oA
+° oo
+o Assoziativität:
+
+(AVB)VC=AV(BVC) und (AAB)AC=AA(BAC)
+
+Siehe UUten
+
+o Distributivität:
+AV(BAC)
+AA(BVC)
+
+(AV B) A(AVC) und
+(AA B)V (AAC)
+
+Sieve Unter
+
+’ . Cc
+o De Morgan’sche Gesetz: AR|AVS AC TANS
+«(AV B)=7AA-B und Aal 4 6) 3°
+(A A B) =7AV 7B Ao| A o °
+OA A je} fo)
+ool o A A
+
+Aufgabe 6: Bestätigen Sie ein paar dieser Gesetze Schritt für Schritt mit
+einer Wahrheitstabelle.
+
+p = er} E F
+A®BCI]AvB OVC Bvc AVE ABCI|AVB AVG BAB BAC AVE
+NAA A A A A NAA A A A A A|
+nAO A A A a naAO A A A ° A
+n OA A A A A AN OA A A A ° A
+1600 A A ° A 160 A A A ° A
+OAA A A A A OAA A A A A A
+o AO A A A a oAo A ° fo) © °
+OOA ° A A A OOA ° A fo) ° 5
+oo 9 [e] ° fe) fe) oo 0 fe) ° fe) o 9
+Asso xoatvitrot Distvibutivitar
+
+
+
+
+
+===== Seite page-14 =====
+
+HSLU tien Seite 11
+
+Damit können wir Terme vereinfachen:
+
+(4(4P V =Q) A (P = Q)) = P
+
+= (PAQA(P=>Q))=>P De Morgan
+
+= (PAQA(=PVQ))>P Implikation
+
+= (PAQA(QV-P))>P Kommutativität
+= (PAQ)=>P Absorption
+
+= A(PAQ)VP Implikation
+
+= -PvQvP De Morgan
+
+= -PVPVQ Kommutativität
+= TVQ Inverse
+
+=T Dominaz
+
+Also ist die Aussage (= (—P V 7=Q) A (P => Q)) > P allgemeingültig.
+
+Aufgabe 7: Vereinfachen Sie mit den Rechengesetzen Schritt fiir Schritt
+die folgenden aussagenlogische Terme so weit wie möglich:
+
+a)
+
+(AA B)V (SAAB)
+(PV (QA P)) A(RV (SV R))
+(PAQ) > (PVQ)
+
+(=Q A (P = Q)) > >P
+
+(P>Q)A(Q=> R) > (P= R)
+
+
+
+
+
+===== Seite page-15 =====
+
+an
+
+NO
+au na AWD
+
+ALA lat) A LOL)
+ar-AlLdaLVOLv)L
+
+at @ldtvovr)
+
+at &CAACALVDLD)D
+
+At &lCOvaoryralarwvnsr))
+
+mW ee a
+
+JE \WLOBAAY VOL)
+de @(lOeadVUE) \Pp
+
+al.
+A
+
+m MM
+
+DAULı Aa AQL
+gsadrbr ng.
+(Orga) ALDVA)L
+
+(BAI)EelO vg) I
+
+IN
+
+Il
+
+LSA) VL
+ISA) VLOLAL )
+
+(SKY) VULCOLAALDAA)
+(SABMIN UAL AWLY) NA)
+(SAWIV MAvDOIENAA,)
+(SALBAYIV Havort Add
+KS ABIANWIN WLaAvoytaAdy)
+
+UYASIABIV(CaVvaIUd) (A
+
+ae WE et
+
+—
+
+a
+
+LVA
+(wuANWYNS
+IyeVaIDAWYS )
+
+(avvwu)yn(o9vW (eo
+
+N
+
+at {it
+
+IN
+
+
+
+
+
+===== Seite page-16 =====
+
+—_
+
+—_——
+
+\
+A” 6 gt
+
+WOaADwEADBDAGEL
+
+PaAayA Men d=
+LOaAyy a COQEAGL)
+(LOABIVIDA COLADUY VL)
+(KORB) VLAy)) A (LOLAIDH VAT)
+(DVS) AB AVOLVA) Adgt
+SADENCILVDU)ACOLVADA)
+
+(argu n Carvery) rn Corvarr)
+angry A LIABYEA COAQLL
+(yAar) A WRABYH VUSAQD)L
+
+(unar) EG WCSAVYHVCOAAL)) =
+
+Itt
+
+I il
+
+|
+
+Wow Ww ua
+
+il
+
+Bea) el3 =U9) v9 A) (2
+
+
+
