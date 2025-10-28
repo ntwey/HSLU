@@ -13,21 +13,36 @@ public class LinePrimitive {
         this.y2 = y2;
     }
 
-    public int getX1() { return x1; }
-    public int getY1() { return y1; }
-    public int getX2() { return x2; }
-    public int getY2() { return y2; }
+    public int getX1() {
+        return x1;
+    }
+
+    public int getY1() {
+        return y1;
+    }
+
+    public int getX2() {
+        return x2;
+    }
+
+    public int getY2() {
+        return y2;
+    }
 
     public void setStart(final int x, final int y) {
-        this.x1 = x; this.y1 = y;
+        this.x1 = x;
+        this.y1 = y;
     }
 
     public void setEnd(final int x, final int y) {
-        this.x2 = x; this.y2 = y;
+        this.x2 = x;
+        this.y2 = y;
     }
 
     public void moveBy(final int dx, final int dy) {
-        this.x1 += dx; this.y1 += dy;
-        this.x2 += dx; this.y2 += dy;
+        this.x1 += dx;
+        this.y1 += dy;
+        this.x2 += dx;
+        this.y2 += dy;
     }
 }

@@ -4,7 +4,7 @@ package ch.hslu.oop.sw05;
  * Kreis-Spezialisierung.
  */
 public class Circle extends Shape {
-    private int radius;
+    private final int radius;
 
     public Circle(final int x, final int y, final int radius) {
         super(x, y);
@@ -14,9 +14,13 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public int getRadius() { return radius; }
+    public int getRadius() {
+        return radius;
+    }
 
-    public int getDiameter() { return 2 * radius; }
+    public int getDiameter() {
+        return 2 * radius;
+    }
 
     @Override
     public int getPerimeter() {

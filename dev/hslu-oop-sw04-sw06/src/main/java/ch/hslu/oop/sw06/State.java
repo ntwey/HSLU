@@ -1,6 +1,8 @@
 package ch.hslu.oop.sw06;
 
-/** Aggregatzustände. */
+/**
+ * Aggregatzustände.
+ */
 public enum State {
     SOLID, LIQUID, GAS
 }

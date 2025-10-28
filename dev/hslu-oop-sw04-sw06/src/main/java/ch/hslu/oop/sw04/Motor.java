@@ -14,7 +14,9 @@ public class Motor implements CountingSwitchable, Named {
         this.name = name;
     }
 
-    /** @return aktuelle Drehzahl in U/min. */
+    /**
+     * @return aktuelle Drehzahl in U/min.
+     */
     public int getRpm() {
         return rpm;
     }
@@ -48,12 +50,12 @@ public class Motor implements CountingSwitchable, Named {
     }
 
     @Override
-    public void setName(final String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     @Override
-    public String getName() {
-        return name;
+    public void setName(final String name) {
+        this.name = name;
     }
 }

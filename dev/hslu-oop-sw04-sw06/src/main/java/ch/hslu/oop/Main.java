@@ -1,8 +1,11 @@
 package ch.hslu.oop;
 
 import ch.hslu.oop.sw04.*;
-import ch.hslu.oop.sw05.*;
-import ch.hslu.oop.sw06.*;
+import ch.hslu.oop.sw05.Circle;
+import ch.hslu.oop.sw05.Rectangle;
+import ch.hslu.oop.sw05.Shape;
+import ch.hslu.oop.sw05.Square;
+import ch.hslu.oop.sw06.Element;
 
 public final class Main {
     public static void main(final String[] args) {

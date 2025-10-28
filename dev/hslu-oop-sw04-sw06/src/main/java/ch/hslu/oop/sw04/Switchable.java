@@ -11,16 +11,24 @@ package ch.hslu.oop.sw04;
  * </ul>
  */
 public interface Switchable {
-    /** Schaltet die Komponente ein. */
+    /**
+     * Schaltet die Komponente ein.
+     */
     void switchOn();
 
-    /** Schaltet die Komponente aus. */
+    /**
+     * Schaltet die Komponente aus.
+     */
     void switchOff();
 
-    /** @return {@code true}, wenn eingeschaltet. */
+    /**
+     * @return {@code true}, wenn eingeschaltet.
+     */
     boolean isSwitchedOn();
 
-    /** @return {@code true}, wenn ausgeschaltet. */
+    /**
+     * @return {@code true}, wenn ausgeschaltet.
+     */
     default boolean isSwitchedOff() {
         return !isSwitchedOn();
     }

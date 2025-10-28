@@ -12,18 +12,29 @@ public abstract class Shape {
         this.y = y;
     }
 
-    /** Verschiebt die Form an eine neue Position. */
+    /**
+     * Verschiebt die Form an eine neue Position.
+     */
     public final void move(final int newX, final int newY) {
         this.x = newX;
         this.y = newY;
     }
 
-    /** @return Umfang als ganze Zahl. */
+    /**
+     * @return Umfang als ganze Zahl.
+     */
     public abstract int getPerimeter();
 
-    /** @return Fläche als ganze Zahl. */
+    /**
+     * @return Fläche als ganze Zahl.
+     */
     public abstract int getArea();
 
-    public final int getX() { return x; }
-    public final int getY() { return y; }
+    public final int getX() {
+        return x;
+    }
+
+    public final int getY() {
+        return y;
+    }
 }

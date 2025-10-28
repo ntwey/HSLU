@@ -19,27 +19,37 @@ public class Line {
         this.end = new Point(x2, y2);
     }
 
-    /** @return defensive Kopie des Startpunktes. */
+    /**
+     * @return defensive Kopie des Startpunktes.
+     */
     public Point getStart() {
         return new Point(start.getX(), start.getY());
     }
 
-    /** @return defensive Kopie des Endpunktes. */
-    public Point getEnd() {
-        return new Point(end.getX(), end.getY());
-    }
-
-    /** Setzt den Startpunkt (defensive Kopie). */
+    /**
+     * Setzt den Startpunkt (defensive Kopie).
+     */
     public void setStart(final Point p) {
         this.start = new Point(p.getX(), p.getY());
     }
 
-    /** Setzt den Endpunkt (defensive Kopie). */
+    /**
+     * @return defensive Kopie des Endpunktes.
+     */
+    public Point getEnd() {
+        return new Point(end.getX(), end.getY());
+    }
+
+    /**
+     * Setzt den Endpunkt (defensive Kopie).
+     */
     public void setEnd(final Point p) {
         this.end = new Point(p.getX(), p.getY());
     }
 
-    /** Verschiebt die Linie um (dx, dy). */
+    /**
+     * Verschiebt die Linie um (dx, dy).
+     */
     public void moveBy(final int dx, final int dy) {
         this.start.setX(this.start.getX() + dx);
         this.start.setY(this.start.getY() + dy);

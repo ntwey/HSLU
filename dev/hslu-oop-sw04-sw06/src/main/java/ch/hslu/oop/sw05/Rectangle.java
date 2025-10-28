@@ -4,8 +4,8 @@ package ch.hslu.oop.sw05;
  * Rechteck-Spezialisierung.
  */
 public class Rectangle extends Shape {
-    private int width;
-    private int height;
+    private final int width;
+    private final int height;
 
     public Rectangle(final int x, final int y, final int width, final int height) {
         super(x, y);
@@ -16,8 +16,13 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
-    public int getWidth() { return width; }
-    public int getHeight() { return height; }
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
     @Override
     public int getPerimeter() {

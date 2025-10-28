@@ -1,6 +1,7 @@
 package ch.hslu.oop.sw04;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,9 +20,7 @@ public class Vehicle implements CountingSwitchable, Named {
         this.engine = engine;
         components.add(engine);
         if (others != null) {
-            for (Switchable s : others) {
-                components.add(s);
-            }
+            Collections.addAll(components, others);
         }
     }
 
@@ -58,13 +57,13 @@ public class Vehicle implements CountingSwitchable, Named {
     }
 
     @Override
-    public void setName(final String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     @Override
-    public String getName() {
-        return name;
+    public void setName(final String name) {
+        this.name = name;
     }
 
     public Motor getEngine() {
