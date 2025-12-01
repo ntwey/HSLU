@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 DMATH/DMATH SW02.md",
+                "file": "Bandcamp/Bandcamp Downloader.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DMATH SW02"
-            }
-          },
-          {
-            "id": "536865c79c7aec40",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 DMATH/DMATH Serie 12.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DMATH Serie 12"
+              "title": "Bandcamp Downloader"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,12 +169,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "536865c79c7aec40",
+  "active": "c6d48a0e2d94aac7",
   "lastOpenFiles": [
-    "02 DMATH/DMATH Serie 11.md",
-    "02 DMATH/DMATH Serie 12.md",
-    "02 DMATH/DMATH Serie 10.md",
+    "assets/NETW2/7.2.10-packet-tracer---configure-dhcpv4.pdf",
+    "assets/NETW2/4.2.7-packet-tracer---configure-router-on-a-stick-inter-vlan-routing.pdf",
+    "Bandcamp/Bandcamp Downloader.md",
+    "Bandcamp",
     "02 DMATH/DMATH Serie 09.md",
+    "02 DMATH/DMATH Serie 08.md",
+    "02 DMATH/DMATH Serie 01.md",
+    "02 DMATH/DMATH Serie 12.md",
+    "02 DMATH/DMATH Serie 11.md",
+    "02 DMATH/DMATH Serie 10.md",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/output.txt",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/temp.txt",
     "assets/DMATH/DMATH-ALGO-Serie11-final_pages/output.txt",
@@ -198,7 +189,6 @@
     "assets/DMATH/DMATH-ALGO-Serie10-final_pages/temp.txt",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/jpgtotext.sh",
     "assets/DMATH/DMATH-ALGO-Serie11-final_pages/jpgtotext.sh",
-    "assets/DMATH/DMATH-ALGO-Serie10-final_pages/jpgtotext.sh",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-13.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-12.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-11.jpg",
@@ -209,15 +199,12 @@
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-06.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-05.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-04.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages",
-    "02 DMATH/DMATH Serie 08.md",
     "02 DMATH/DMATH Serie 07.md",
     "02 DMATH/DMATH Serie 06.md",
     "02 DMATH/DMATH Serie 05.md",
     "02 DMATH/DMATH Serie 04.md",
     "02 DMATH/DMATH Serie 03.md",
     "02 DMATH/DMATH Serie 02.md",
-    "02 DMATH/DMATH Serie 01.md",
     "02 DMATH/DMATH SW01.md",
     "02 DMATH/DMATH SW02.md",
     "01 OOP/OOP SW07 Collections, Equals und Compare.md",
@@ -229,8 +216,6 @@
     "01 OOP/OOP SW05 Vererbung Entwicklungsumgebung.md",
     "01 OOP/OOP SW04 Schnittstellen und Datenkapselung.md",
     "05 DB&S/DB&S SW05 + 06.md",
-    "04 INTROL/INTROL SW02 Open your mind.md",
-    "04 INTROL/INTROL SW01 Einführung.md",
-    "03 NETW2/NETW2 SW02 Modul 2, 6.md"
+    "04 INTROL/INTROL SW02 Open your mind.md"
   ]
 }
