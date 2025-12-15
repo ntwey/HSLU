@@ -6,11 +6,14 @@ import ch.hslu.oop.sw05.Rectangle;
 import ch.hslu.oop.sw05.Shape;
 import ch.hslu.oop.sw05.Square;
 import ch.hslu.oop.sw06.Element;
+import ch.hslu.oop.sw11.BinaryTemperatureStore;
 import ch.hslu.oop.sw11.Measurement;
 import ch.hslu.oop.sw11.NetatmoCsvReader;
 import ch.hslu.oop.sw11.TemperatureCourse;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class Main {
     public static void main(final String[] args) {
@@ -62,11 +65,23 @@ public final class Main {
         */
 
         try {
+
+            Path writeDataPath = Path.of("/Users/whiptail/HSLU/dev/hslu-oop-sw04-sw11/src/main/java/ch/hslu/oop/data/new.bin");
+            List<Float> temperatures = new ArrayList<Float>();
+            temperatures.add(2.4f);
+            temperatures.add(1.3f);
+            BinaryTemperatureStore binaryTemperatureStore = new BinaryTemperatureStore();
+            binaryTemperatureStore.writeInt(writeDataPath, 3);
+            binaryTemperatureStore.writeTemperatures(writeDataPath, temperatures);
+            System.out.println(binaryTemperatureStore.readTemperatures(writeDataPath));
+
+
             // Pfad zur Netatmo-Datei anpassen!
             Path csvPath = Path.of("/Users/whiptail/HSLU/dev/hslu-oop-sw04-sw11/src/main/java/ch/hslu/oop/sw11/netatmo-export-202501-202504.csv");
 
             NetatmoCsvReader reader = new NetatmoCsvReader();
             TemperatureCourse course = reader.readFile(csvPath);
+
 
             System.out.println("Anzahl Messwerte: " + course.size());
             System.out.println("Min Temperatur: " + course.getMinTemperature());

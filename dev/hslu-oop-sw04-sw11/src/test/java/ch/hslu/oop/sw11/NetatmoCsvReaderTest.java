@@ -16,9 +16,9 @@ public class NetatmoCsvReaderTest {
     public void testReadFile() throws IOException {
         Path tempFile = Files.createTempFile("netatmo", ".csv");
         String content = ""
-                + "1473517749;"2023/01/10 16:29:09";30.4;60\n"
-                + "1473518057;"2023/01/10 16:34:17";31.0;59\n"
-                + "1473518364;"2023/01/10 16:39:24";29.5;58\n";
+                + "1473517749;\"2023/01/10 16:29:09\";30.4;60\n"
+                + "1473518057;\"2023/01/10 16:34:17\";31.0;59\n"
+                + "1473518364;\"2023/01/10 16:39:24\";29.5;58\n";
         Files.write(tempFile, content.getBytes(StandardCharsets.UTF_8));
 
         NetatmoCsvReader reader = new NetatmoCsvReader();

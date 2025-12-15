@@ -12,7 +12,7 @@ public class NetatmoLineParserTest {
     @Test
     public void testParseValidLine() {
         NetatmoLineParser parser = new NetatmoLineParser();
-        String line = "1473517749;"2023/01/10 16:29:09";30.4;60";
+        String line = "1473517749;\"2023/01/10 16:29:09\";30.4;60";
 
         Measurement m = parser.parse(line);
 
@@ -24,7 +24,7 @@ public class NetatmoLineParserTest {
     @Test
     public void testParseInvalidLineTooShort() {
         NetatmoLineParser parser = new NetatmoLineParser();
-        String line = "123;"2023/01/10 16:29:09";30.4";
+        String line = "123;\"2023/01/10 16:29:09\";30.4";
 
         assertThrows(IllegalArgumentException.class, () -> parser.parse(line));
     }
