@@ -1,0 +1,110 @@
+\documentclass[oneside]{scrbook}
+
+\usepackage[german]{babel}
+\usepackage[a4paper,top=2cm,bottom=4cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[draft]{microtype}
+\usepackage{tabularx, booktabs, enumitem, adjustbox}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+\usepackage[backend=biber,refsegment=chapter,style=apa]{biblatex}
+
+\let\textcite\parencite
+\let\cite\parencite
+\addbibresource{Dokumentationsteil/zotero.bib}
+\graphicspath{ {media/} }
+\usepackage{array}
+\usepackage[toc, acronym]{glossaries}
+
+
+\newcommand{\qt}[1]{``#1''}
+
+\defbibheading{subbibliography}{\chapter*{Literaturverzeichnis}}
+
+
+% -------------- Begriff / Glossar --------------
+
+\makeglossaries
+
+%\newglossaryentry{latex}
+%{
+%    name=Latex,
+%    description={Is a markup language specially suited 
+%    for scientific documents}
+%}
+
+% -------------- Abkürzungsverzeichnis --------------
+
+%Kapitel 1
+\newacronym{cve}{CVE}{Common Vulnerabilities and Exposures}
+
+
+% --------------------------------------
+
+\begin{document}
+
+% --- START ORIENTIERUNGSTEIL ---
+
+\include{Orientierungsteil/Titelblatt}
+\newpage
+
+\pagenumbering{Roman}
+\include{Orientierungsteil/Hinweise}
+
+\newpage
+\include{Orientierungsteil/ManagementSummary}
+
+% Inhaltsverzeichnis
+\newpage
+\tableofcontents
+
+
+% --- START HAUPTTEIL ---
+
+\newpage
+\pagenumbering{arabic}
+\include{Hauptteil/Einleitung}
+\printbibliography[heading=subbibliography, segment=\therefsegment]
+
+% Kapitel 1
+\newpage
+\include{Hauptteil/Kapitel 1}
+\printbibliography[heading=subbibliography, segment=\therefsegment]
+
+% Fazit
+\newpage
+\include{Hauptteil/Fazit}
+\printbibliography[heading=subbibliography, segment=\therefsegment]
+
+% --- START DOKUMENTATIONSTEIL ---
+
+% CRAAP-Test
+\addcontentsline{toc}{chapter}{Anhang}
+\include{Dokumentationsteil/CRAAP-Test}
+
+% Abkürzungsverzeichnis
+\newpage
+\printglossary[type=\acronymtype, title=Abkürzungsverzeichnis]
+
+% Abbildungsverzeichnis
+\newpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+% Tabellenverzeichnis
+\newpage
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+
+% Literaturverzeichnis (gesamt)
+\newpage
+\addcontentsline{toc}{chapter}{Gesamtes Literaturverzeichnis}
+\printbibliography[title={Gesamtes Literaturverzeichnis}]
+
+\end{document}
