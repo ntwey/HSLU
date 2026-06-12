@@ -1,0 +1,14 @@
+
+
+===== Seite page-1 =====
+
+31. Al-gestützte Threat Intelligence
+
+Analyse, wie KI und maschinelles Lernen in Threat Intelligence integriert werden, um Angriffe frühzeitig zu
+erkennen.
+
+Output: Vergleich bestehender KI-gestützter Threat-Intelligence-Systeme, Proof of Concept mit Open-
+Source-Tools wie OpenCTI.
+
+
+
