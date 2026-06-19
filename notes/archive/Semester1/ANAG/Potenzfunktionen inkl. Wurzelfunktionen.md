@@ -4,7 +4,7 @@
 # Potenzfunktionen
 ![[Screenshot 2025-02-23 at 15.45.00.png]]
 Noch mehr Infos bei [[Rationale Funktionen]]
-# Wurzenfunktionen
+# Wurzelfunktionen
 ## Definition
 ![[Screenshot 2025-02-23 at 16.03.18.png]]
 ### Anmerkungen
