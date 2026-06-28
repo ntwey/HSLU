@@ -209,7 +209,6 @@ Das Active Directory nutzt Kerberos als Standard. Der Domänencontroller agiert 
 1. **Service-User & Gruppe anlegen:**
     
     - `sudo groupadd -r myappgroup`
-        
     - `sudo useradd -r -s /sbin/nologin -g myappgroup myappuser` _(Hinweis: `-r` erstellt eine System-UID < 1000. `/sbin/nologin` blockiert den interaktiven System-Login mit einer Fehlermeldung; `/bin/false` würde den Login ohne Meldung sofort beenden)._
         
 2. **Anwendungsordner:** Gemäß _Filesystem Hierarchy Standard (FHS) 3.0_ gehört manuell installierte Software nach `/usr/local/` (ausführbare Dateien nach `/usr/local/bin/`).
