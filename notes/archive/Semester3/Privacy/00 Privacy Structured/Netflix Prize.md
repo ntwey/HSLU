@@ -1,0 +1,2 @@
+Ein historisches Schlüsselereignis für die Datenschutzforschung ist der [[Netflix Prize]] von 2006. Netflix veröffentlichte damals einen vermeintlich anonymisierten Datensatz mit Filmbewertungen von rund 500'000 Nutzern. Forscher der University of Texas (Narayanan & Shmatikov) konnten jedoch durch einen einfachen [[Linkage-Attack]] (Abgleich mit öffentlichen IMDb-Profilen) zahlreiche Nutzer erfolgreich re-identifizieren. Dieser Vorfall bewies endgültig, dass das blosse Entfernen von direkten Identifikatoren (Namen) keine echte Anonymität garantiert.
+

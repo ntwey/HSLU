@@ -1,0 +1,1 @@
+Die [[Suppression]] (Unterdrückung) ist eine technische Massnahme bei der Anonymisierung von Daten. Wenn das Generalisieren von Werten nicht ausreicht, um eine Person in der Masse zu verstecken, werden problematische Werte durch Suppression vollständig gelöscht oder durch Platzhalter (wie Wildcards) ersetzt.

@@ -1,0 +1,1 @@
+Die [[Topics API]] ist ein moderner Lösungsansatz von Google für interessenbasierte Werbung. Anstatt Nutzer mit individuellen IDs über das Netz hinweg zu verfolgen (wie bei traditionellen Third-Party-Cookies), ermittelt der Browser lokal bestimmte Interessensgebiete (Topics) des Nutzers und übermittelt lediglich diese aggregierten Themen an die Werbenetzwerke.

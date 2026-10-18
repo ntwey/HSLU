@@ -1,0 +1,2 @@
+Selbst die besten Anonymisierungsnetzwerke (wie Tor) sind nutzlos, wenn die [[Operational Security]] (OpSec) des Nutzers fehlerhaft ist. Ein bekanntes Beispiel hierfür ist der Harvard-Student [[Eldo Kim]]. Er nutzte 2013 das Tor-Netzwerk, um anonym Bombendrohungen zu versenden und einer Prüfung zu entgehen. Letztendlich wurde er nicht durch einen Fehler im Tor-Protokoll gefasst, sondern durch Fehler in seiner eigenen OpSec und Netzwerkprotokollierung auf dem Campus.
+

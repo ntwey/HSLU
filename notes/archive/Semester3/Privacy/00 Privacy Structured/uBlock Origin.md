@@ -1,0 +1,1 @@
+[[uBlock Origin]] ist ein Browser-Tool zur Abwehr von Tracking. Es handelt sich um einen umfassenden Blocker für Werbung, Tracker und Skripte. Das Tool bietet Nutzern durch einen "Advanced Mode" eine granulare, detaillierte Kontrolle darüber, welche spezifischen Verbindungen auf Ebene der einzelnen Domains blockiert oder zugelassen werden sollen.

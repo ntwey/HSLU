@@ -1,0 +1,2 @@
+Privacy Enhancing Technologies ([[PETs]]) sind Technologien, welche die Verarbeitung von Daten so gestalten, dass der Datenschutz maximiert wird, ohne den Zweck der Datenbearbeitung übermässig einzuschränken. Sie unterstützen gesetzliche Vorgaben wie die Datensparsamkeit bereits auf technischer Ebene (im Sinne von [[Privacy by Design]]). PETs lassen sich in Kategorien unterteilen: Datenminimierung und Maskierung, Kontrolle und Transparenz (z. B. Privacy Dashboards) sowie anonyme Nutzung (z. B. das [[Tor-Netzwerk]]).
+

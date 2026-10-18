@@ -1,0 +1,2 @@
+Der elektronische Reisepass (ePass) basiert auf dem Standard ICAO Doc 9303 und enthält einen kontaktlosen RFID-Chip. Zum Schutz der sensiblen biometrischen und kryptografischen Daten setzt er auf verschiedene Sicherheitsmechanismen. Die Passive Authentication (PA) prüft die digitale Signatur auf Manipulation, während die Basic Access Control (BAC) ein unbemerktes Auslesen verhindert, indem ein Schlüssel aus der maschinenlesbaren Zone des gedruckten Passes abgeleitet werden muss.
+

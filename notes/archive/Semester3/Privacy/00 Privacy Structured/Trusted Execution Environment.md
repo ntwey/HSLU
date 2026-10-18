@@ -1,0 +1,2 @@
+Ein [[Trusted Execution Environment]] (TEE) ist eine sicherheitsrelevante Hardware-Umgebung, die im Rahmen des Confidential Computing eingesetzt wird. Es isoliert sensible Daten und den ausführenden Code während der Verarbeitung («Data in Use») auf Hardware-Ebene. 
+* (Hinweis: In den aktuell hochgeladenen Quellen wird Confidential Computing und hardwarebasierte Kryptografie erwähnt, weitergehende tiefere technische Spezifikationen zum TEE liegen im aktuellen Dokumentenstamm jedoch nicht vor.)

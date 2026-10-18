@@ -1,0 +1,2 @@
+Bei der Aufzeichnung von Anrufen bei Firmen-Hotlines zeigt sich ein gravierender Unterschied im Rechtsverständnis. In der Schweiz ist für Massengeschäfte lediglich eine hörbare Information («Dieses Gespräch wird aufgezeichnet») vorab ausreichend, was durch Ausnahmen im Art. 179 StGB legitimiert wird. In Deutschland hingegen verbietet § 201 StGB in Kombination mit der EU-DSGVO eine solche Praxis strengstens; dort ist zwingend ein aktives und explizites Opt-in (z. B. durch Tastendruck) erforderlich.
+

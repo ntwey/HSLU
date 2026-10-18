@@ -1,0 +1,2 @@
+Die digitale Wirtschaft stützt sich stark auf [[Datenbroker]], die Nutzerinformationen legal sammeln und verkaufen. Der sogenannte Burrill-Fall illustriert diese Gefahr drastisch: Standortdaten (z. B. Besuche von Kliniken oder privaten Wohnsitzen) wurden nicht durch Hacker erbeutet, sondern offen auf dem Markt gekauft, um Personen zu identifizieren und blosszustellen. Dies zeigt, wie aus vermeintlich anonymen GPS-Daten durch Verknüpfung eine Waffe werden kann.
+

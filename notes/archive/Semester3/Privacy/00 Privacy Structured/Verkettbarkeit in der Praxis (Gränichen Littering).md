@@ -1,0 +1,1 @@
+Ein prägnantes Praxisbeispiel aus der Schweiz für die Gefahr der [[Verkettbarkeit]] (Linking) zeigt sich im Fall des Litterings beim Waldhaus in Gränichen. Durch einen Abgleich von DNA-Spuren an zurückgelassenem Abfall mit bestehenden Datenbanken der Kantonspolizei konnte eine Verknüpfung hergestellt und der Täter eindeutig identifiziert werden. 

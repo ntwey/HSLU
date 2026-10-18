@@ -1,0 +1,2 @@
+Die Secure Multiparty Computation (MPC) erlaubt es mehreren Parteien, gemeinsam Analysen und Berechnungen über verteilte Datensätze durchzuführen, ohne ihre zugrunde liegenden Rohdaten jemals miteinander zu teilen. Dies ist ideal, um vertikal partitionierte Datensätze (z.B. Daten eines Krankenhauses und einer Versicherung zur selben Person) datenschutzkonform auszuwerten. Ein Nachteil ist der hohe Rechenaufwand durch komplexe kryptografische Protokolle.
+

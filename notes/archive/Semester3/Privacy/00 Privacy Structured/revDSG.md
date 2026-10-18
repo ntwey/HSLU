@@ -1,0 +1,2 @@
+Das [[revDSG]] (revidiertes Datenschutzgesetz) ist das Schweizer Gesetz zum Schutz von [[Personendaten]], welches seit 2023 in Kraft ist. Ein wesentlicher Unterschied zur europäischen [[EU-DSGVO]] besteht darin, dass das revDSG den Fokus stärker auf Transparenz sowie Treu und Glauben legt; im Schweizer Alltagsgeschäft reicht oft eine blosse Information über die Datenverarbeitung aus, sofern die betroffene Person nicht aktiv widerspricht (Opt-out-Prinzip).
+

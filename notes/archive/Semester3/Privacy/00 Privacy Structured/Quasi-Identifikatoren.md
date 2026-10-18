@@ -1,0 +1,2 @@
+[[Quasi-Identifikatoren]] (QID) sind Daten, die für sich allein genommen keine direkte Identifizierung einer Person ermöglichen, aber in Kombination miteinander eine Person eindeutig identifizierbar machen. Klassische Beispiele sind das Geburtsdatum, das Geschlecht und die Postleitzahl. Eine Studie verdeutlicht die Gefahr: 87 Prozent der US-Bevölkerung können allein durch die Kombination dieser drei Quasi-Identifikatoren eindeutig re-identifiziert werden. Bei der Anonymisierung müssen solche Werte zwingend generalisiert werden.
+

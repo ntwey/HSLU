@@ -1,0 +1,1 @@
+T-Closeness baut auf K-Anonymität und L-Diversität auf. Das Modell verlangt, dass die Verteilung eines sensiblen Attributs innerhalb einer anonymisierten Gruppe der Verteilung dieses Attributs im gesamten Datensatz sehr nahekommt. Dies schützt davor, dass durch statistische Abweichungen in bestimmten Gruppen Rückschlüsse auf Einzelne gezogen werden können.

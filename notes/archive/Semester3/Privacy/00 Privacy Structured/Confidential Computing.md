@@ -1,0 +1,1 @@
+Confidential Computing schützt Daten während ihrer aktiven Verarbeitung («Data in Use»). Dies wird erreicht, indem die sensiblen Daten und der Code in einer hardwarebasierten, sicheren Enklave isoliert werden, dem Trusted Execution Environment (TEE). Dadurch sind die Daten selbst vor dem Betriebssystem oder dem Cloud-Provider verborgen.

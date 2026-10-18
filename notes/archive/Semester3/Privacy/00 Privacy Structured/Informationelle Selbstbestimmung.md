@@ -1,0 +1,1 @@
+Die informationelle Selbstbestimmung ist ein Grundrecht, das eng mit dem Datenschutz verbunden ist. Es besagt, dass jede Person grundsätzlich selbst darüber entscheiden darf, wer, wann und aus welchen Gründen Informationen über sie sammeln und bearbeiten darf. 

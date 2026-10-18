@@ -1,0 +1,1 @@
+Der [[CCPA]] (California Consumer Privacy Act) ist ein im Jahr 2020 in Kraft getretenes kalifornisches Datenschutzgesetz. Es gewährleistet Verbrauchern umfassende Rechte und Kontrolle über ihre [[Personendaten]] (wie Namen, IP-Adressen und Kaufverhalten) und gilt für Unternehmen, die in Kalifornien tätig sind und bestimmte Umsatz- oder Datenschwellenwerte überschreiten.

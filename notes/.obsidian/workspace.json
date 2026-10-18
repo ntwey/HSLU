@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ae5d2e8a39ced996",
+        "id": "699d689fec3d93a2",
         "type": "tabs",
         "children": [
           {
-            "id": "9e71f81ca92519fc",
+            "id": "1b5194460988fc50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 SPRG Structured Notes/01_Requirements_Engineering.md",
+                "file": "Semester4/07 CLOUDSEC/SW05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Requirements_Engineering"
-            }
-          },
-          {
-            "id": "2c21de5dca0a942f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 SPRG Structured Notes/12_Ergänzungen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "12_Ergänzungen"
-            }
-          },
-          {
-            "id": "6d53392622f85c4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 SPRG Structured Notes/04_Threat_Modeling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04_Threat_Modeling"
-            }
-          },
-          {
-            "id": "69d06cb6ec3c750f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 SPRG/SW 10.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SW 10"
+              "title": "SW05"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -96,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 208.5
   },
   "right": {
     "id": "3ecc5d2d13b52840",
@@ -212,54 +171,54 @@
       "bases:Create new base": false
     }
   },
-  "active": "2c21de5dca0a942f",
+  "active": "1b5194460988fc50",
   "lastOpenFiles": [
-    "00 SPRG Structured Notes/06_Authentifizierung_und_Autorisierung.md",
-    "00 SPRG Structured Notes/12_Ergänzungen.md",
-    "00 SPRG Structured Notes/11_Probeprüfung_Lösungen.md",
-    "01 SPRG/SW 01 Intro.md",
-    "01 SPRG/EXAM_SPRG_Probepruefung.pdf",
-    "00 SPRG Structured Notes/00_SPRG_Map_of_Content.md",
-    "00 SPRG Structured Notes/02_Systemmodellierung_und_UML.md",
-    "00 SPRG Structured Notes/07_OWASP_Top_10_und_Vulnerabilities.md",
-    "00 SPRG Structured Notes/05_Security_Architecture_und_Design.md",
-    "00 SPRG Structured Notes/04_Threat_Modeling.md",
-    "01 SPRG/SW 10.md",
-    "00 SPRG Structured Notes/03_Secure_Software_Development_Lifecycle.md",
-    "assets/SPRG/Repetition_1_Teil.pdf",
-    "00 SPRG Structured Notes/10_STRIDE_und_DREAD_Detail.md",
-    "00 SPRG Structured Notes/01_Requirements_Engineering.md",
-    "00 SPRG Structured Notes/09_Buffer_Overflow_und_Memory_Safety.md",
-    "00 SPRG Structured Notes/08_API_Security.md",
-    "01 SPRG/SW 02 Homework Use Case, DFD.md",
-    "00 SPRG Structured Notes",
-    "ToDo/01 SPRG.zip",
-    "01 SPRG/SW 02 Diagrams.md",
-    "01 SPRG/SW 12.md",
-    "01 SPRG.zip",
-    "01 SPRG/SW 13.md",
-    "01 SPRG/SW 09.md",
-    "01 SPRG/SW 06.md",
-    "01 SPRG/SW 05.md",
-    "01 SPRG/SW 04.md",
-    "01 SPRG/SW 03.md",
-    "01 SPRG/SW 01 Homework.md",
-    "archive/Semester3/ITRE/SW 09.md",
-    "archive/Semester3/Ethik/04. Wichtige Begriffe Modul Ethik V2.0.pdf",
-    "archive/Semester3/Ethik/Ethik_ZF_HS25.pdf",
-    "assets/Semester3/ISLAB/ISLAB_Anleitung_Laboruebung_Access_Management_Linux.pdf",
-    "archive/Semester3/ISLAB/ISLAB_Repetitionsfragen.pdf",
-    "assets/Semester3/ISLAB/ISLAB_Anleitung_Laboruebung_Access_Management_Linux_solution.pdf",
-    "assets/Semseter2/DMATH-ALGO/page-1.jpg",
+    "Semester4/07 CLOUDSEC/SW04.md",
+    "Semester4/07 CLOUDSEC/SW05.md",
+    "Semester4/07 CLOUDSEC/SW03.md",
+    "Semester4/07 CLOUDSEC/SW02.md",
+    "Semester4/07 CLOUDSEC/SW01.md",
+    "Semester4/06 SPREN1/SW02.md",
+    "Semester4/06 SPREN1/SW03.md",
+    "Semester4/06 SPREN1/SW05.md",
+    "assets/Semester4/06 SPREN1/SW03/SPREN1_SDL_SecureDevelopment2.pdf",
+    "assets/Semester4/07 CloudSec/SW03/SPREN1_SDL_SecureDevelopment2.pdf",
+    "Semester4/06 SPREN1/SW04.md",
+    "Prompt für Folien zusammenfassung.md",
+    "Semester4/05 ISM/SW05.md",
+    "Semester4/05 ISM/SW04.md",
+    "Semester4/05 ISM/SW03.md",
+    "Semester4/04 ADS/SW05.md",
+    "Semester4/04 ADS/SW04.md",
+    "Semester4/04 ADS/SW03.md",
+    "Semester4/03 KRYPTOG/SW05.md",
+    "Semester4/03 KRYPTOG/SW04.md",
+    "Semester4/03 KRYPTOG/SW03.md",
+    "Semester4/02 ASTAT/SW04.md",
+    "Semester4/02 ASTAT/SW03.md",
+    "Semester4/02 ASTAT/SW02.md",
+    "Semester4/01 IAM/SW04.md",
+    "Semester4/01 IAM/SW05.md",
+    "Semester4/00 IMMERSIVELABS/STATUS.md",
+    "Semester4/01 IAM/SW03.md",
+    "assets/Semester4/07 CloudSec/SW05/HSLU CloudSec HS2026 - L5.pdf",
+    "assets/Semester4/07 CloudSec/SW05",
+    "assets/Semester4/07 CloudSec/SW04/HSLU CloudSec HS2026 - L4.pdf",
+    "assets/Semester4/07 CloudSec/SW04",
+    "assets/Semester4/06 SPREN1/SW05/SPREN1_Architecture and Design_HS2026.pdf",
+    "assets/Semester4/06 SPREN1/SW04/SPREN1_SDL_SecureDevelopment3.pdf",
+    "assets/Semester4/06 SPREN1/SW05",
+    "assets/Semester4/06 SPREN1/untitled folder",
+    "assets/Semester4/02 ASTAT/SW03/SW03-final/Bilder/LogoHSLU.png",
+    "assets/Semester4/02 ASTAT/SW02/SW02/Bilder/LogoHSLU.png",
+    "assets/Semester4/02 ASTAT/SW01/SW01/Bilder/LogoHSLU.png",
+    "archive/Semester3/SPRG/Dataflow Example.png",
+    "assets/Semester2/DMATH-ALGO/page-1.jpg",
     "Untitled.canvas",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-13.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-12.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-11.jpg",
     "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-10.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-09.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-08.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-07.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-06.jpg",
-    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-05.jpg"
+    "assets/DMATH/DMATH-ALGO-Serie12-final_pages/page-09.jpg"
   ]
 }

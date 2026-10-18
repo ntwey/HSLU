@@ -1,0 +1,1 @@
+Die [[Digitale Identität]] repräsentiert einen Nutzer in der Informationsgesellschaft. Sie besteht aus technisch abbildbaren und erfassbaren Attributen (Identitätsdaten). Dazu gehören beispielsweise Benutzernamen, IP-Adressen, [[Cookies]], E-Mail-Adressen, Passnummern oder Kreditkartennummern.

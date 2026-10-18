@@ -1,0 +1,501 @@
+First_Name,Last_Name,Street,ZIP_Code,Country,Age,Gender,Arrival_Date,Nights,Total_Price,Room_Type
+*,*,*,********,DACH,"[40, 50[",*,Q4,6,2252,Suite
+*,*,*,********,Middle East,"[40, 50[",*,Q4,3,1036,Suite
+*,*,*,********,Noth America,"[60, 70[",*,Q3,8,1442,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q1,2,252,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,8,1196,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,3,663,Deluxe
+*,*,*,********,Western Europpe,"[60, 70[",*,Q3,3,456,Superior
+*,*,*,*,*,*,*,*,5,961,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,12,1899,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q4,9,1398,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q4,4,603,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,10,4010,Suite
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,6,944,Deluxe
+*,*,*,********,South Asia,"[20, 30[",*,Q3,13,2501,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q1,4,694,Deluxe
+*,*,*,********,Noth America,"[60, 70[",*,Q2,13,2103,Deluxe
+*,*,*,********,Southern Europe,"[30, 40[",*,Q4,3,381,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q1,3,384,Superior
+*,*,*,*,*,*,*,*,5,611,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q3,3,651,Deluxe
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q1,8,2333,Suite
+*,*,*,*,*,*,*,*,4,751,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q2,3,467,Deluxe
+*,*,*,*,*,*,*,*,3,429,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q3,4,412,Superior
+*,*,*,********,East Asia,"[40, 50[",*,Q2,7,1457,Deluxe
+*,*,*,********,Middle East,"[30, 40[",*,Q2,3,327,Superior
+*,*,*,********,South Asia,"[30, 40[",*,Q2,8,801,Superior
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q4,8,1126,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q4,8,1014,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,4,702,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q1,12,2552,Deluxe
+*,*,*,********,Southern Europe,"[50, 60[",*,Q1,5,1038,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,5,1002,Deluxe
+*,*,*,*,*,*,*,*,9,1060,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q4,1,177,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q4,10,1536,Superior
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q4,4,655,Superior
+*,*,*,*,*,*,*,*,7,897,Superior
+*,*,*,********,Middle East,"[30, 40[",*,Q3,2,459,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q1,4,909,Deluxe
+*,*,*,*,*,*,*,*,3,720,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q3,4,518,Superior
+*,*,*,*,*,*,*,*,1,163,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q4,12,1588,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q3,6,739,Superior
+*,*,*,*,*,*,*,*,8,1074,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q4,6,1328,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q1,8,998,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,6,1291,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q3,1,209,Deluxe
+*,*,*,********,Middle East,"[50, 60[",*,Q2,9,1411,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,3,454,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q3,9,1440,Superior
+*,*,*,********,South Asia,"[30, 40[",*,Q2,2,479,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q4,8,1509,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q1,2,354,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q2,6,1359,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q1,2,299,Superior
+*,*,*,*,*,*,*,*,4,878,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q2,3,340,Superior
+*,*,*,********,Southeast Asia,"[30, 40[",*,Q3,4,668,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,7,1356,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,1,165,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,9,1074,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q4,1,128,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q2,5,738,Superior
+*,*,*,*,*,*,*,*,7,828,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q1,3,501,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q4,2,311,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q3,8,1166,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,13,1825,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q2,2,358,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,3,707,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q1,13,2119,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q4,10,1822,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,2,334,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q1,9,2010,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q4,8,1429,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q1,7,2325,Suite
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,1,236,Deluxe
+*,*,*,********,Middle East,"[70, 80[",*,Q3,1,213,Deluxe
+*,*,*,********,Southern Europe,"[30, 40[",*,Q3,10,1587,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,1,200,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q4,1,179,Deluxe
+*,*,*,********,Middle East,"[30, 40[",*,Q1,5,739,Superior
+*,*,*,*,*,*,*,*,8,1694,Deluxe
+*,*,*,********,Western Europpe,"[60, 70[",*,Q1,5,463,Superior
+*,*,*,*,*,*,*,*,3,1144,Suite
+*,*,*,*,*,*,*,*,9,1303,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q3,4,489,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q1,3,423,Superior
+*,*,*,********,South Asia,"[30, 40[",*,Q1,11,2114,Deluxe
+*,*,*,********,Western Europpe,"[60, 70[",*,Q3,5,1101,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,5,751,Superior
+*,*,*,********,Noth America,"[30, 40[",*,Q2,9,3032,Suite
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,9,1443,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q2,1,222,Deluxe
+*,*,*,*,*,*,*,*,2,340,Superior
+*,*,*,********,South Asia,"[50, 60[",*,Q3,1,119,Superior
+*,*,*,*,*,*,*,*,4,573,Superior
+*,*,*,*,*,*,*,*,1,179,Deluxe
+*,*,*,********,Middle East,"[50, 60[",*,Q2,6,905,Deluxe
+*,*,*,********,Western Europpe,"[60, 70[",*,Q2,9,1842,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,11,1673,Deluxe
+*,*,*,********,South Asia,"[50, 60[",*,Q4,5,1547,Suite
+*,*,*,********,Middle East,"[40, 50[",*,Q2,6,1458,Deluxe
+*,*,*,********,Noth America,"[20, 30[",*,Q4,9,1121,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,10,2679,Suite
+*,*,*,********,Southern Europe,"[30, 40[",*,Q3,5,1100,Deluxe
+*,*,*,********,East Asia,"[30, 40[",*,Q4,3,499,Superior
+*,*,*,********,Southeast Asia,"[30, 40[",*,Q3,5,1081,Deluxe
+*,*,*,********,Western Europpe,"[60, 70[",*,Q2,1,176,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q3,5,765,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q3,7,893,Superior
+*,*,*,********,Western Europpe,"[60, 70[",*,Q2,7,887,Superior
+*,*,*,********,Noth America,"[60, 70[",*,Q3,7,1097,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q4,4,566,Superior
+*,*,*,*,*,*,*,*,3,411,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q3,2,302,Superior
+*,*,*,********,Western Europpe,"[60, 70[",*,Q3,5,761,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,1,270,Suite
+*,*,*,********,Western Europpe,"[20, 30[",*,Q3,7,1409,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q4,2,822,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,1,153,Superior
+*,*,*,*,*,*,*,*,9,1496,Superior
+*,*,*,********,East Asia,"[40, 50[",*,Q2,2,290,Superior
+*,*,*,********,East Asia,"[50, 60[",*,Q1,10,1402,Superior
+*,*,*,*,*,*,*,*,8,1329,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q1,1,144,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q1,9,3276,Suite
+*,*,*,********,Noth America,"[40, 50[",*,Q3,2,260,Superior
+*,*,*,*,*,*,*,*,9,893,Superior
+*,*,*,********,Western Europpe,"[60, 70[",*,Q3,1,236,Deluxe
+*,*,*,*,*,*,*,*,4,886,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,11,2581,Deluxe
+*,*,*,********,DACH,"[60, 70[",*,Q4,6,820,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q4,12,1523,Superior
+*,*,*,********,Southern Europe,"[60, 70[",*,Q4,1,173,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q3,2,285,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,5,1368,Suite
+*,*,*,********,Middle East,"[40, 50[",*,Q3,7,1205,Deluxe
+*,*,*,********,South Asia,"[20, 30[",*,Q3,5,538,Superior
+*,*,*,********,South Asia,"[30, 40[",*,Q1,12,1843,Superior
+*,*,*,*,*,*,*,*,4,697,Deluxe
+*,*,*,*,*,*,*,*,1,133,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q1,2,291,Superior
+*,*,*,*,*,*,*,*,10,1603,Deluxe
+*,*,*,********,Middle East,"[30, 40[",*,Q1,6,1144,Deluxe
+*,*,*,*,*,*,*,*,7,881,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,2,428,Deluxe
+*,*,*,*,*,*,*,*,2,251,Superior
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q1,6,951,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,10,1535,Superior
+*,*,*,*,*,*,*,*,14,1384,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q1,1,156,Superior
+*,*,*,*,*,*,*,*,2,302,Superior
+*,*,*,*,*,*,*,*,7,1267,Deluxe
+*,*,*,********,DACH,"[20, 30[",*,Q3,5,560,Superior
+*,*,*,*,*,*,*,*,6,642,Superior
+*,*,*,********,Middle East,"[50, 60[",*,Q2,2,628,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q3,4,678,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q1,1,136,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q3,2,754,Suite
+*,*,*,********,DACH,"[60, 70[",*,Q1,3,409,Superior
+*,*,*,*,*,*,*,*,3,963,Suite
+*,*,*,********,Southeast Asia,"[30, 40[",*,Q3,6,868,Superior
+*,*,*,*,*,*,*,*,3,331,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,1,104,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,6,986,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q1,6,1666,Suite
+*,*,*,********,East Asia,"[50, 60[",*,Q1,1,205,Deluxe
+*,*,*,********,Southern Europe,"[50, 60[",*,Q1,4,825,Deluxe
+*,*,*,********,Southern Europe,"[60, 70[",*,Q4,3,702,Deluxe
+*,*,*,*,*,*,*,*,3,409,Superior
+*,*,*,*,*,*,*,*,8,1150,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q3,2,262,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q1,10,1336,Superior
+*,*,*,*,*,*,*,*,3,888,Suite
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,1,177,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,10,1721,Deluxe
+*,*,*,*,*,*,*,*,8,993,Superior
+*,*,*,*,*,*,*,*,3,416,Superior
+*,*,*,********,Middle East,"[30, 40[",*,Q3,2,342,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q1,5,595,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,4,778,Deluxe
+*,*,*,*,*,*,*,*,9,1041,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q3,3,601,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,2,398,Deluxe
+*,*,*,********,Southern Europe,"[50, 60[",*,Q1,3,466,Superior
+*,*,*,********,Middle East,"[20, 30[",*,Q2,2,264,Superior
+*,*,*,********,Noth America,"[50, 60[",*,Q1,10,1220,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q4,6,681,Superior
+*,*,*,*,*,*,*,*,7,934,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q1,2,292,Superior
+*,*,*,********,South Asia,"[50, 60[",*,Q4,6,1259,Deluxe
+*,*,*,*,*,*,*,*,4,488,Superior
+*,*,*,*,*,*,*,*,7,2831,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q1,11,2810,Suite
+*,*,*,********,DACH,"[30, 40[",*,Q3,9,891,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,8,1204,Deluxe
+*,*,*,*,*,*,*,*,2,306,Superior
+*,*,*,********,Middle East,"[30, 40[",*,Q1,4,437,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q3,13,2929,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,2,326,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q4,3,1164,Suite
+*,*,*,********,Middle East,"[30, 40[",*,Q3,5,629,Superior
+*,*,*,*,*,*,*,*,12,1302,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q2,1,448,Suite
+*,*,*,*,*,*,*,*,7,1079,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,7,1599,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q4,6,1412,Deluxe
+*,*,*,*,*,*,*,*,10,1502,Superior
+*,*,*,********,DACH,"[60, 70[",*,Q1,2,211,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q2,5,652,Superior
+*,*,*,********,South Asia,"[40, 50[",*,Q3,3,445,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,4,675,Deluxe
+*,*,*,*,*,*,*,*,2,180,Superior
+*,*,*,*,*,*,*,*,14,1435,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q3,12,1895,Deluxe
+*,*,*,*,*,*,*,*,8,1050,Superior
+*,*,*,********,Noth America,"[20, 30[",*,Q4,9,3715,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,8,1047,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,5,964,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q1,1,163,Superior
+*,*,*,********,Middle East,"[30, 40[",*,Q4,7,782,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,2,278,Superior
+*,*,*,*,*,*,*,*,10,1490,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q2,6,606,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q1,10,2031,Deluxe
+*,*,*,********,Southern Europe,"[30, 40[",*,Q3,2,459,Deluxe
+*,*,*,********,Middle East,"[60, 70[",*,Q4,4,638,Superior
+*,*,*,********,Middle East,"[50, 60[",*,Q2,3,1187,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,7,683,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,1,258,Suite
+*,*,*,********,South Asia,"[40, 50[",*,Q3,8,1739,Deluxe
+*,*,*,********,Southern Europe,"[60, 70[",*,Q4,11,1761,Superior
+*,*,*,********,Southern Europe,"[60, 70[",*,Q4,5,773,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,4,1594,Suite
+*,*,*,********,Noth America,"[40, 50[",*,Q3,4,994,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,12,2218,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q4,7,1098,Superior
+*,*,*,*,*,*,*,*,1,142,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,2,308,Superior
+*,*,*,********,South Asia,"[40, 50[",*,Q3,2,307,Superior
+*,*,*,********,DACH,"[20, 30[",*,Q3,1,146,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q2,6,1009,Deluxe
+*,*,*,*,*,*,*,*,4,756,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q1,2,372,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,9,1502,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q1,8,2767,Suite
+*,*,*,*,*,*,*,*,4,456,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,6,1132,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,9,1665,Deluxe
+*,*,*,********,Middle East,"[40, 50[",*,Q3,4,1092,Suite
+*,*,*,********,Noth America,"[50, 60[",*,Q4,9,1044,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q2,6,913,Superior
+*,*,*,*,*,*,*,*,1,230,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,5,783,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q1,4,1126,Suite
+*,*,*,********,Noth America,"[30, 40[",*,Q3,1,163,Superior
+*,*,*,*,*,*,*,*,6,707,Superior
+*,*,*,*,*,*,*,*,3,315,Superior
+*,*,*,*,*,*,*,*,1,157,Superior
+*,*,*,********,Noth America,"[30, 40[",*,Q2,2,405,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,2,187,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,14,1620,Superior
+*,*,*,********,South Asia,"[20, 30[",*,Q3,11,1715,Superior
+*,*,*,********,East Asia,"[30, 40[",*,Q4,11,2219,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,2,320,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,4,1587,Suite
+*,*,*,********,Noth America,"[40, 50[",*,Q3,7,2580,Suite
+*,*,*,********,Western Europpe,"[50, 60[",*,Q3,7,887,Superior
+*,*,*,********,Middle East,"[30, 40[",*,Q2,5,1012,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q4,1,155,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q1,5,789,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,6,981,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q2,1,379,Suite
+*,*,*,*,*,*,*,*,3,828,Suite
+*,*,*,********,Middle East,"[30, 40[",*,Q2,1,214,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q3,8,1387,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,8,1066,Superior
+*,*,*,*,*,*,*,*,12,2091,Deluxe
+*,*,*,*,*,*,*,*,2,272,Superior
+*,*,*,*,*,*,*,*,3,580,Deluxe
+*,*,*,*,*,*,*,*,1,109,Superior
+*,*,*,********,Noth America,"[50, 60[",*,Q2,2,202,Superior
+*,*,*,*,*,*,*,*,2,324,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q3,4,1391,Suite
+*,*,*,*,*,*,*,*,2,266,Superior
+*,*,*,********,DACH,"[60, 70[",*,Q4,1,247,Suite
+*,*,*,********,Middle East,"[30, 40[",*,Q3,7,1475,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q4,5,549,Superior
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q4,1,243,Deluxe
+*,*,*,********,Middle East,"[70, 80[",*,Q3,4,898,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q2,8,1386,Deluxe
+*,*,*,********,South Asia,"[30, 40[",*,Q2,9,1816,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q1,3,991,Suite
+*,*,*,********,DACH,"[30, 40[",*,Q2,1,204,Deluxe
+*,*,*,*,*,*,*,*,2,374,Deluxe
+*,*,*,********,Middle East,"[20, 30[",*,Q2,2,217,Superior
+*,*,*,*,*,*,*,*,4,582,Superior
+*,*,*,*,*,*,*,*,9,3520,Suite
+*,*,*,*,*,*,*,*,3,401,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q3,1,105,Superior
+*,*,*,********,Noth America,"[50, 60[",*,Q2,3,1050,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q3,3,359,Superior
+*,*,*,********,East Asia,"[50, 60[",*,Q1,7,1000,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q4,7,1661,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,4,970,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q2,6,847,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,2,260,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q1,7,1090,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q1,3,625,Deluxe
+*,*,*,*,*,*,*,*,2,317,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q1,14,3323,Deluxe
+*,*,*,*,*,*,*,*,1,151,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q4,14,2156,Superior
+*,*,*,********,Noth America,"[30, 40[",*,Q3,2,831,Suite
+*,*,*,*,*,*,*,*,4,426,Superior
+*,*,*,*,*,*,*,*,5,1051,Deluxe
+*,*,*,********,South Asia,"[50, 60[",*,Q3,2,567,Suite
+*,*,*,********,Noth America,"[30, 40[",*,Q3,2,224,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,12,2040,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,2,249,Superior
+*,*,*,*,*,*,*,*,3,324,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q1,5,1111,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q2,4,498,Superior
+*,*,*,*,*,*,*,*,10,1525,Superior
+*,*,*,********,DACH,"[60, 70[",*,Q4,12,1166,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,8,1195,Superior
+*,*,*,********,Noth America,"[30, 40[",*,Q1,6,817,Superior
+*,*,*,********,Noth America,"[30, 40[",*,Q1,4,657,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,1,379,Suite
+*,*,*,*,*,*,*,*,2,336,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q2,4,400,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q2,7,2150,Suite
+*,*,*,********,DACH,"[30, 40[",*,Q1,12,1676,Superior
+*,*,*,********,South Asia,"[40, 50[",*,Q3,4,923,Deluxe
+*,*,*,********,South Asia,"[30, 40[",*,Q1,1,199,Deluxe
+*,*,*,*,*,*,*,*,2,273,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,3,1193,Suite
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,1,96,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q3,6,1834,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q3,3,455,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,14,2607,Deluxe
+*,*,*,********,South Asia,"[30, 40[",*,Q1,6,785,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q3,1,221,Deluxe
+*,*,*,*,*,*,*,*,6,615,Superior
+*,*,*,********,Noth America,"[60, 70[",*,Q2,5,1084,Deluxe
+*,*,*,********,Middle East,"[20, 30[",*,Q2,10,2037,Deluxe
+*,*,*,********,DACH,"[60, 70[",*,Q1,2,233,Superior
+*,*,*,********,Western Europpe,"[60, 70[",*,Q3,11,2475,Deluxe
+*,*,*,*,*,*,*,*,2,672,Suite
+*,*,*,*,*,*,*,*,9,1327,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q2,9,1003,Superior
+*,*,*,********,South Asia,"[50, 60[",*,Q3,5,792,Superior
+*,*,*,********,East Asia,"[40, 50[",*,Q2,11,1797,Deluxe
+*,*,*,*,*,*,*,*,3,714,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q1,3,1194,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q4,1,227,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,6,957,Superior
+*,*,*,********,Middle East,"[60, 70[",*,Q4,9,1785,Deluxe
+*,*,*,*,*,*,*,*,1,180,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q1,3,344,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q1,7,1148,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q4,8,2593,Suite
+*,*,*,********,DACH,"[30, 40[",*,Q3,2,474,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q1,4,692,Deluxe
+*,*,*,********,Noth America,"[60, 70[",*,Q3,7,910,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q4,12,1569,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,3,502,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,10,4175,Suite
+*,*,*,********,South Asia,"[50, 60[",*,Q3,2,234,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q4,9,1422,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,9,1413,Deluxe
+*,*,*,********,Southeast Asia,"[30, 40[",*,Q3,9,1071,Superior
+*,*,*,********,DACH,"[30, 40[",*,Q4,5,792,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,12,2515,Deluxe
+*,*,*,********,Noth America,"[60, 70[",*,Q3,1,221,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q2,2,245,Superior
+*,*,*,********,Southern Europe,"[30, 40[",*,Q1,2,184,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q3,3,343,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,6,1281,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,12,1440,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,7,1296,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q1,3,402,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,6,1578,Suite
+*,*,*,*,*,*,*,*,10,1379,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q3,3,418,Superior
+*,*,*,*,*,*,*,*,3,599,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q4,8,1859,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q1,7,1292,Deluxe
+*,*,*,********,East Asia,"[30, 40[",*,Q4,5,1418,Suite
+*,*,*,********,Middle East,"[30, 40[",*,Q4,2,229,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q3,8,815,Superior
+*,*,*,*,*,*,*,*,5,1611,Suite
+*,*,*,********,DACH,"[50, 60[",*,Q1,2,404,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,3,797,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,1,127,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q1,6,579,Superior
+*,*,*,*,*,*,*,*,8,1288,Superior
+*,*,*,*,*,*,*,*,3,372,Superior
+*,*,*,*,*,*,*,*,8,1322,Deluxe
+*,*,*,*,*,*,*,*,8,1116,Superior
+*,*,*,*,*,*,*,*,3,500,Superior
+*,*,*,********,Noth America,"[20, 30[",*,Q4,11,1338,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q2,13,4966,Suite
+*,*,*,********,Southern Europe,"[50, 60[",*,Q1,1,96,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,9,926,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q2,2,214,Superior
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,2,627,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,13,2431,Deluxe
+*,*,*,********,Middle East,"[70, 80[",*,Q3,11,4308,Suite
+*,*,*,********,DACH,"[20, 30[",*,Q3,5,983,Deluxe
+*,*,*,********,DACH,"[50, 60[",*,Q3,11,3743,Suite
+*,*,*,********,Noth America,"[30, 40[",*,Q2,6,1054,Deluxe
+*,*,*,********,Noth America,"[60, 70[",*,Q2,9,3028,Suite
+*,*,*,********,Southern Europe,"[30, 40[",*,Q4,1,167,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,5,817,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,5,699,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,4,500,Superior
+*,*,*,*,*,*,*,*,5,2022,Suite
+*,*,*,*,*,*,*,*,3,616,Deluxe
+*,*,*,********,Noth America,"[20, 30[",*,Q4,6,1415,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q4,5,848,Superior
+*,*,*,********,Noth America,"[60, 70[",*,Q2,7,725,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q1,7,1466,Deluxe
+*,*,*,********,Southern Europe,"[30, 40[",*,Q3,6,816,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,7,1125,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q1,2,469,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q1,12,2176,Deluxe
+*,*,*,*,*,*,*,*,5,933,Deluxe
+*,*,*,*,*,*,*,*,9,1744,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q2,4,596,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q2,2,245,Superior
+*,*,*,*,*,*,*,*,4,633,Deluxe
+*,*,*,********,Western Europpe,"[20, 30[",*,Q2,9,3664,Suite
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,1,333,Suite
+*,*,*,********,Western Europpe,"[20, 30[",*,Q4,11,2561,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,4,1540,Suite
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,12,4495,Suite
+*,*,*,*,*,*,*,*,8,2073,Suite
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q1,4,468,Superior
+*,*,*,*,*,*,*,*,9,1993,Deluxe
+*,*,*,********,South Asia,"[30, 40[",*,Q2,1,139,Superior
+*,*,*,*,*,*,*,*,1,116,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q3,4,574,Superior
+*,*,*,********,Middle East,"[40, 50[",*,Q4,3,606,Deluxe
+*,*,*,********,Western Europpe,"[30, 40[",*,Q2,11,3236,Suite
+*,*,*,********,Middle East,"[30, 40[",*,Q1,2,190,Superior
+*,*,*,********,Middle East,"[60, 70[",*,Q4,1,209,Deluxe
+*,*,*,*,*,*,*,*,6,711,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,14,3289,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q2,2,243,Superior
+*,*,*,********,South Asia,"[50, 60[",*,Q4,12,2764,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q1,1,200,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q3,2,457,Deluxe
+*,*,*,*,*,*,*,*,9,1441,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q3,3,668,Deluxe
+*,*,*,********,Middle East,"[30, 40[",*,Q4,2,397,Deluxe
+*,*,*,********,Noth America,"[50, 60[",*,Q2,1,267,Deluxe
+*,*,*,********,Noth America,"[40, 50[",*,Q1,4,565,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q2,4,1579,Suite
+*,*,*,********,DACH,"[40, 50[",*,Q1,9,1049,Superior
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q1,14,2420,Deluxe
+*,*,*,********,Southeast Asia,"[30, 40[",*,Q3,9,2505,Suite
+*,*,*,*,*,*,*,*,4,1090,Suite
+*,*,*,********,Southeast Asia,"[40, 50[",*,Q1,3,1198,Suite
+*,*,*,********,Western Europpe,"[60, 70[",*,Q1,5,697,Superior
+*,*,*,*,*,*,*,*,4,920,Deluxe
+*,*,*,********,Noth America,"[30, 40[",*,Q2,6,2430,Suite
+*,*,*,********,Noth America,"[60, 70[",*,Q3,6,925,Deluxe
+*,*,*,********,Middle East,"[30, 40[",*,Q4,9,1256,Superior
+*,*,*,********,Western Europpe,"[20, 30[",*,Q4,3,358,Superior
+*,*,*,********,Noth America,"[60, 70[",*,Q3,5,2067,Suite
+*,*,*,********,Southern Europe,"[40, 50[",*,Q2,11,1378,Superior
+*,*,*,*,*,*,*,*,11,1179,Superior
+*,*,*,********,Western Europpe,"[60, 70[",*,Q1,12,1388,Superior
+*,*,*,********,Southern Europe,"[40, 50[",*,Q4,1,246,Deluxe
+*,*,*,********,Western Europpe,"[40, 50[",*,Q4,6,1091,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q2,1,143,Deluxe
+*,*,*,********,DACH,"[30, 40[",*,Q2,8,1028,Superior
+*,*,*,********,Noth America,"[40, 50[",*,Q1,5,813,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q3,9,873,Superior
+*,*,*,*,*,*,*,*,7,1171,Deluxe
+*,*,*,********,Southern Europe,"[40, 50[",*,Q3,2,322,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,3,325,Superior
+*,*,*,********,Middle East,"[50, 60[",*,Q2,6,688,Superior
+*,*,*,*,*,*,*,*,5,869,Deluxe
+*,*,*,*,*,*,*,*,3,607,Deluxe
+*,*,*,*,*,*,*,*,2,212,Superior
+*,*,*,********,Western Europpe,"[40, 50[",*,Q1,11,1430,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q4,8,1182,Superior
+*,*,*,********,DACH,"[50, 60[",*,Q3,3,564,Deluxe
+*,*,*,********,DACH,"[40, 50[",*,Q2,5,1191,Deluxe
+*,*,*,********,Western Europpe,"[50, 60[",*,Q2,7,693,Superior
+*,*,*,********,Western Europpe,"[50, 60[",*,Q4,3,385,Superior
+*,*,*,*,*,*,*,*,1,172,Superior
+*,*,*,********,DACH,"[40, 50[",*,Q1,9,994,Superior

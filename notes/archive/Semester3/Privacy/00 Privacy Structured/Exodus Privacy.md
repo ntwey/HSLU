@@ -1,0 +1,2 @@
+[[Exodus Privacy]] ist eine Plattform zur Analyse von Mobile Tracking in Android-Apps. Sie führt eine statische Code-Analyse (Static Analysis) von APK-Dateien durch, ohne dass die App installiert werden muss. Dabei gleicht das System Signaturen im Code mit einer umfangreichen Datenbank ab, um versteckte Tracking-SDKs und datenschutzrelevante Berechtigungen (wie Zugriff auf Kamera oder Kontakte) aufzudecken.
+

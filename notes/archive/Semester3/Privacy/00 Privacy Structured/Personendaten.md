@@ -1,0 +1,2 @@
+[[Personendaten]] sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Dazu gehören direkte Identifikatoren wie Name oder E-Mail-Adresse sowie Angaben, die in Kombination eine Person bestimmbar machen (wie [[Quasi-Identifikatoren]]). Auch sachliche oder technische Daten gelten als Personendaten, sobald ein Rückschluss auf eine spezifische Person möglich ist.
+

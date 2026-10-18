@@ -1,0 +1,2 @@
+Der [[EU AI Act]] ist eine neue EU-Verordnung zur Regulierung von Künstlicher Intelligenz, welche direkte Vorgaben an das Datenmanagement stellt. Artikel 10 verlangt eine hohe Datenqualität, bei der Trainings- und Testdaten für KI-Modelle repräsentativ, fehlerfrei und vollständig sein müssen. Zudem fordert Artikel 11 eine lückenlose Data Lineage (Rückverfolgbarkeit), sodass der gesamte Weg eines Datenpunkts von der Quelle bis zum Output nachvollziehbar dokumentiert ist.
+

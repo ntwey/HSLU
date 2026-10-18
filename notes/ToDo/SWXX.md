@@ -1,16 +1,18 @@
-SPRG:
+IMMERSIVELABS:
 - [ ] 
-ISLAB:
+IAM:
 - [ ] 
-DMATH-CODE:
+ASTAT:
 - [ ] 
-SOC:
+KRYPTOG:
 - [ ] 
-ITRE:
+ADS:
 - [ ] 
-ENGPRA:
+ISM:
 - [ ] 
-Privacy:
+SPREN1:
 - [ ] 
-Ethik:
+CLOUDSEC:
+- [ ] 
+BAPRAXIS:
 - [ ] 

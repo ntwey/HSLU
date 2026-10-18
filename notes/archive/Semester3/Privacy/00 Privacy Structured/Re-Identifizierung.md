@@ -1,0 +1,2 @@
+Re-Identifizierung (oder De-Anonymisierung) ist der Prozess, bei dem anonymisierte Daten durch die Verknüpfung mit externen Datensätzen oder Hintergrundwissen wieder einer bestimmten natürlichen Person zugeordnet werden können. Häufig genügen wenige Quasi-Identifikatoren: Studien zeigen, dass 87 Prozent der US-Bevölkerung allein durch die Kombination von Postleitzahl, Geburtsdatum und Geschlecht eindeutig identifiziert werden können.
+

@@ -1,0 +1,2 @@
+Sicherheitsrisiken in Large Language Models ([[LLMs]]) entstehen primär durch einen Architekturfehler: Das Modell kann nicht logisch zwischen System-Vorgaben der Entwickler und Eingaben der Nutzer unterscheiden. Dies ermöglicht die [[Prompt Injection]], bei der bösartige Instruktionen direkt oder indirekt (z.B. versteckt in Webseiten) eingeschleust werden. Zudem versuchen Angreifer durch [[Jailbreaking]] (wie das Vorgeben von Rollenspielen oder das Verwenden von Base64-Kodierungen) die eingebauten Sicherheitsbarrieren (Guardrails) gezielt zu umgehen.
+

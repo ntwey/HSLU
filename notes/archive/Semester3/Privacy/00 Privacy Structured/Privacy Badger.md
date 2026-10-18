@@ -1,0 +1,1 @@
+[[Privacy Badger]] ist ein Anti-Tracking-Tool der Electronic Frontier Foundation (EFF). Im Gegensatz zu listenbasierten Blockern erlernt diese Erweiterung das Verhalten von Trackern aktiv durch heuristische Verhaltensanalysen und blockiert diese anschliessend adaptiv und automatisch.

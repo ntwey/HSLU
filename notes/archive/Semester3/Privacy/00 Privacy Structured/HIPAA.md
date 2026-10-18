@@ -1,0 +1,2 @@
+Der [[HIPAA]] (Health Insurance Portability and Accountability Act) ist ein striktes US-amerikanisches Gesetz aus dem Jahr 1996 zum Schutz von Gesundheitsdaten. Es regelt die Speicherung, Übertragung und Offenlegung von personenbezogenen Gesundheitsinformationen (PHI) und fordert strenge Sicherheitsvorkehrungen zum Schutz der Vertraulichkeit und Integrität von medizinischen Daten durch Gesundheitsdienstleister und Versicherungen.
+

@@ -1,0 +1,1 @@
+[[Bluetooth Beacons]] sind kleine Hardware-Sender, die Signale aussenden, welche von mobilen Geräten in der Nähe empfangen werden können. Sie gehören zu den Tracking-Technologien, die neben WiFi, RFID und GPS eingesetzt werden, um sogenanntes Device Tracking durchzuführen und den physischen Standort eines Nutzers zu bestimmen.
